@@ -11,6 +11,7 @@ CONTENTS:
 
 ==============================================================================*/
 
+
 /* Floating Search Bar
 ==============================================================================*/
 
@@ -24,8 +25,8 @@ CONTENTS:
 
 #s-lg-box-15999343-container {
   padding: 0;
-  margin-top: -1.2rem;
-  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  margin-top: -0.95rem;
+  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   height: 455px;
   background-attachment: fixed;
   background-position: center;
@@ -40,6 +41,12 @@ CONTENTS:
   align-items: center;
   -webkit-justify-content: center;
   -webkit-align-items: center;
+}
+
+@media screen and (min-width: 1500px) {
+  #s-lg-box-15999343-container {
+    height: 700px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -59,11 +66,10 @@ CONTENTS:
 }
 
 @media screen and (max-width: 767px) {
-  .nav-justified > li {
+  .nav-justified>li {
     width: 33%;
     float: left !important;
   }
-
   .s-lg-form-control {
     margin-right: 12px;
   }
@@ -75,102 +81,66 @@ CONTENTS:
   }
 }
 
-#api_hours_today_iid907_lid2270 {
-  font-size: 300%;
-  font-family: "open_sansextrabold", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  line-height: 1.5;
-
+.nav-tabs.nav-justified>li>a {
+  border-radius: 0 !important;
+  color: white;
+  transition: all 0.2s;
 }
 
-@media screen and (max-width: 410px) {
-  #api_hours_today_iid907_lid2270 {
-      font-size: 110%;
-  }
+.nav-tabs.nav-justified>li>a:hover {
+  color: black;
+  background: white;
 }
 
-@media screen and (max-width: 480px) and (min-width: 411px) {
-  #api_hours_today_iid907_lid2270 {
-      font-size: 150%;
-  }
+.nav-tabs.nav-justified>li.active>a {
+  color: black;
 }
 
-@media screen and (max-width: 580px) and (min-width: 481px) {
-  #api_hours_today_iid907_lid2270 {
-      font-size: 200%;
-  }
-}
-
-@media screen and (max-width: 700px) and (min-width: 581px) {
-  #api_hours_today_iid907_lid2270 {
-      font-size: 200%;
-  }
-}
-
-@media screen and (max-width: 800px) and (min-width: 701px) {
-  #api_hours_today_iid907_lid2270 {
-      font-size: 250%;
-  }
-}
-
-.hours-today {
+.input-group {
+  max-width: 700px;
   margin: 0 auto;
-  text-transform: uppercase;
 }
 
-.hours-col-loc {
-  display: none !important;
+.search-box {
+  text-align: center;
 }
-
-.stats p {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  line-height: 1;
-  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
-}
-
-.stats {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 
 /* 3 Column Bar
 ==============================================================================*/
 
 #api_hours_today_iid907_lid2270 {
   font-size: 300%;
-  font-family: "open_sansextrabold", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.5;
-
 }
 
 @media screen and (max-width: 410px) {
   #api_hours_today_iid907_lid2270 {
-      font-size: 110%;
+    font-size: 110%;
   }
 }
 
 @media screen and (max-width: 480px) and (min-width: 411px) {
   #api_hours_today_iid907_lid2270 {
-      font-size: 150%;
+    font-size: 150%;
   }
 }
 
 @media screen and (max-width: 580px) and (min-width: 481px) {
   #api_hours_today_iid907_lid2270 {
-      font-size: 200%;
+    font-size: 200%;
   }
 }
+
 @media screen and (max-width: 700px) and (min-width: 581px) {
   #api_hours_today_iid907_lid2270 {
-      font-size: 200%;
+    font-size: 200%;
   }
 }
+
 @media screen and (max-width: 800px) and (min-width: 701px) {
   #api_hours_today_iid907_lid2270 {
-      font-size: 250%;
+    font-size: 250%;
   }
 }
 
@@ -184,16 +154,14 @@ CONTENTS:
 }
 
 .stats p {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  line-height: 1;
-  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+  margin: 5px 0;
 }
 
 .stats {
   margin-right: 0;
   margin-left: 0;
 }
+
 
 /* Other
 ==============================================================================*/
@@ -224,6 +192,11 @@ a:hover, a:active, a:focus {
   padding-right: 2rem;
   margin: 5px 0;
 }
+
+#s-lib-footer-public {
+  display: none;
+}
+
 
 /* Testing grounds
 ==============================================================================*/
