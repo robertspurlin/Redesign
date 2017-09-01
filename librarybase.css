@@ -1,0 +1,94 @@
+/* Redesign - James E. Walker Library, MTSU. 2017 Amy York and Robert Spurlin
+Base Header CSS.
+==============================================================================*/
+
+
+/* The search bar that came with LibGuides */
+#s-lg-guide-header-search {
+  display: none;
+}
+
+*:hover, *:active, *:focus {
+  outline: 0 !important;
+}
+
+a:hover, a:active, a:focus {
+  outline: 0 !important;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+}
+
+.toplinks, .toplinks > li > a {
+  font-size: 13.5px;
+  color: black;
+}
+
+
+/* Animation of the hamburger menu when clicked */
+.navbar-toggle.collapsed > .icon-bar {
+  transition: all 0.2s;
+}
+
+.navbar-toggle.collapsed  > .middle {
+  transform-origin: left;
+}
+
+.navbar-toggle.collapsed.onnav > .top {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  -webkit-transform-origin: 10% 10%;
+}
+
+.navbar-toggle.collapsed.onnav > .middle {
+  opacity: 0;
+  width: 1px;
+}
+
+.navbar-toggle.collapsed.onnav > .bottom {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  -ms-transform-origin: 10% 90%;
+  -webkit-transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed.offnav > .top {
+  transform: rotate(0);
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+}
+
+.navbar-toggle.collapsed.offnav > .middle {
+  opacity: 1;
+  width: auto;
+}
+
+.navbar-toggle.collapsed.offnav > .bottom {
+  transform: rotate(0);
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+}
+
+
+/* Helper classes for mobile */
+@media screen and (max-width: 767px) {
+ .mobilehide {
+    display: none;
+  }
+
+ .pb2m {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .s-lg-form-control {
+    width: 100% !important;
+  }
+}

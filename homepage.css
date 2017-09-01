@@ -1,0 +1,229 @@
+/* Redesign - James E. Walker Library, MTSU. 2017 Amy York and Robert Spurlin
+Style arguments for the home page.
+================================================================================
+
+CONTENTS:
+
+1. Floating search bar with background image, home page
+2. 3 Column Bar, pulled from MT's home page
+3. Other/Unclassified
+4. Testing Grounds (put code you are not sure of here)
+
+==============================================================================*/
+
+/* Floating Search Bar
+==============================================================================*/
+
+#s-lg-box-15999343 {
+  background: transparent;
+}
+
+#s-lg-col-126 {
+  padding: 0;
+}
+
+#s-lg-box-15999343-container {
+  padding: 0;
+  margin-top: -1.2rem;
+  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  height: 455px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  #s-lg-box-15999343-container {
+    height: 300px !important;
+    background-attachment: scroll;
+  }
+}
+
+.tab-content {
+  overflow: hidden;
+  max-height: 266px;
+}
+
+.transparent-box {
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-justified > li {
+    width: 33%;
+    float: left !important;
+  }
+
+  .s-lg-form-control {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .s-lg-form-control {
+    width: 100% !important;
+  }
+}
+
+#api_hours_today_iid907_lid2270 {
+  font-size: 300%;
+  font-family: "open_sansextrabold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+
+}
+
+@media screen and (max-width: 410px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 411px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 580px) and (min-width: 481px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 581px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 701px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 250%;
+  }
+}
+
+.hours-today {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.hours-col-loc {
+  display: none !important;
+}
+
+.stats p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+}
+
+.stats {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+/* 3 Column Bar
+==============================================================================*/
+
+#api_hours_today_iid907_lid2270 {
+  font-size: 300%;
+  font-family: "open_sansextrabold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+
+}
+
+@media screen and (max-width: 410px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 411px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 580px) and (min-width: 481px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 200%;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 581px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 200%;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 701px) {
+  #api_hours_today_iid907_lid2270 {
+      font-size: 250%;
+  }
+}
+
+.hours-today {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.hours-col-loc {
+  display: none !important;
+}
+
+.stats p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+}
+
+.stats {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Other
+==============================================================================*/
+
+*:hover, *:active, *:focus {
+  outline: 0 !important;
+}
+
+a:hover, a:active, a:focus {
+  outline: 0 !important;
+}
+
+#s-lg-tabs-container {
+  padding: 0;
+}
+
+#s-lg-box-16162454 {
+  background: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -1.2rem;
+  margin-bottom: 0;
+}
+
+#s-lg-box-16162454 p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 5px 0;
+}
+
+/* Testing grounds
+==============================================================================*/
