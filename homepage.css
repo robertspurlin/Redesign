@@ -160,19 +160,56 @@ CONTENTS:
 .stats {
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 0;
+}
+
+#gethelp > .row {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background: #0066CC;
+  color: white;
+}
+
+.trigger, .roomtrigger {
+  cursor: pointer;
+}
+
+#reserverooms > .row {
+  background: #0066CC;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+#reserverooms > .row h2 {
+  padding: 1.5rem 0;
+  color: white;
+  font-weight: bold;
+}
+
+.button {
+  padding: 1rem 5rem;
+  color: #0066CC;
+  background-color: white;
+  margin: 2rem;
+  transition: all 0.3s;
+  text-align: center;
+  font-weight: bold;
+  word-wrap: break-word;
+  white-space: pre;
+}
+
+.button:hover {
+  background-color: #0066CC;
+  color: white;
+  text-decoration: none;
 }
 
 
 /* Other
 ==============================================================================*/
-
-*:hover, *:active, *:focus {
-  outline: 0 !important;
-}
-
-a:hover, a:active, a:focus {
-  outline: 0 !important;
-}
 
 #s-lg-tabs-container {
   padding: 0;

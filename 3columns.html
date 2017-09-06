@@ -1,15 +1,83 @@
 <div class="row stats text-center">
-  <a class="col-sm-4" href="http://www.mtsu.edu/programs/index.php?utm_source=Homepage%20Button">
+  <div class="col-sm-4 trigger">
     <p>Talk to a Librarian</p>
     <div class="statnumber">GET HELP</div>
-  </a>
+  </div>
   <a class="col-sm-4" href="http://www.mtsu.edu/financial-aid/?utm_source=Homepage%20Button">
     <p>Today's Hours</p>
     <div id="api_hours_today_iid907_lid2270"></div>
     <script src="https://api3.libcal.com/api_hours_today.php?iid=907&lid=2270&format=js&systemTime=1&context=object"></script>
   </a>
-  <a class="col-sm-4" href="http://mtsu.edu/applynow?utm_source=Homepage%20Button">
+  <div class="col-sm-4 roomtrigger">
     <p>Reserve</p>
     <div class="statnumber">STUDY ROOMS</div>
-  </a>
+  </div>
 </div>
+
+<div id='gethelp'>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form id="s-lch-login-form">
+        <div class="login_field form-group">
+          <label for="client_name" class="control-label">Name (blank=anonymous)</label>
+          <input type="text" class="input-sm form-control" name="client_name" id="client_name">
+        </div>
+        <input type="hidden" name="dept" value="1405">
+        <div class="form-group">
+          <label class="control-label" for="client_question">Your Question</label>
+          <textarea id="client_question" class="form-control input-sm" name="client_question" required=""></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-chat btn btn-xs col-xs-12">Start Chat</button>
+          <button type="button" class="btn-chat btn btn-sm s-lch-btn-close col-xs-12 margin-top hidden">Minimize chat</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="reserverooms">
+  <div class="row">
+    <h2>I want to reserve...</h2>
+    <a href="http://mtsu.libcal.com/booking/groupstudy" class="button" target="_blank">the Group Study Room</a>
+    <a href="http://mtsu.libcal.com/booking/meetingplace2" class="button" target="_blank">Meeting Place 2</a>
+    <a href="http://mtsu.libcal.com/booking/meetingplace4" class="button" target="_blank">Meeting Place 4</a>
+    <a href="http://mtsu.libcal.com/booking/presentation" class="button" target="_blank">a Presentation Practice Room</a>
+  </div>
+</div>
+
+
+<script>
+
+jQuery(document).ready(function($) {
+  $('#gethelp').hide();
+  $('#reserverooms').hide();
+
+  $('.trigger').click(function(e) {
+    e.preventDefault();
+
+    if (document.getElementById('reserverooms').style.display == "block") {
+      $('#reserverooms').slideUp('fast');
+      setTimeout(function() {
+        $('#gethelp').slideToggle('fast')
+      }, 300);
+    } else {
+      $('#gethelp').slideToggle('fast');
+    }
+  });
+
+  $('.roomtrigger').click(function(e) {
+    e.preventDefault();
+
+    if (document.getElementById('gethelp').style.display == "block") {
+      $('#gethelp').slideUp('fast');
+      setTimeout(function() {
+        $('#reserverooms').slideToggle('fast')
+      }, 300);
+    } else {
+      $('#reserverooms').slideToggle('fast');
+    }
+  });
+});
+
+</script>
