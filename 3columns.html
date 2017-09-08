@@ -1,14 +1,14 @@
 <div class="row stats text-center">
-  <div class="col-sm-4 trigger">
+  <div class="col-sm-4 trigger child">
     <p>Talk to a Librarian</p>
     <div class="statnumber">GET HELP</div>
   </div>
-  <a class="col-sm-4" href="http://www.mtsu.edu/financial-aid/?utm_source=Homepage%20Button">
+  <a class="col-sm-4 parent" href="http://www.mtsu.edu/financial-aid/?utm_source=Homepage%20Button">
     <p>Today's Hours</p>
     <div id="api_hours_today_iid907_lid2270"></div>
     <script src="https://api3.libcal.com/api_hours_today.php?iid=907&lid=2270&format=js&systemTime=1&context=object"></script>
   </a>
-  <div class="col-sm-4 roomtrigger">
+  <div class="col-sm-4 roomtrigger child">
     <p>Reserve</p>
     <div class="statnumber">STUDY ROOMS</div>
   </div>
@@ -37,12 +37,12 @@
 </div>
 
 <div id="reserverooms">
-  <div class="row">
+  <div class="row text-center">
     <h2>I want to reserve...</h2>
-    <a href="http://mtsu.libcal.com/booking/groupstudy" class="button" target="_blank">the Group Study Room</a>
-    <a href="http://mtsu.libcal.com/booking/meetingplace2" class="button" target="_blank">Meeting Place 2</a>
-    <a href="http://mtsu.libcal.com/booking/meetingplace4" class="button" target="_blank">Meeting Place 4</a>
-    <a href="http://mtsu.libcal.com/booking/presentation" class="button" target="_blank">a Presentation Practice Room</a>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/groupstudy" class="button" target="_blank">the Group Study Room</a></div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/meetingplace2" class="button" target="_blank">Meeting Place 2</a></div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/meetingplace4" class="button" target="_blank">Meeting Place 4</a></div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/presentation" class="button" target="_blank">a Presentation Practice Room</a></div>
   </div>
 </div>
 
@@ -77,6 +77,16 @@ jQuery(document).ready(function($) {
     } else {
       $('#reserverooms').slideToggle('fast');
     }
+  });
+
+  $(".child").css({
+    "height" : $('.parent').height()
+  });
+
+  $(window).resize(function() {
+    $(".child").css({
+      "height" : $('.parent').height()
+    });
   });
 });
 

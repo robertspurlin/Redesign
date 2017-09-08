@@ -54,6 +54,18 @@ CONTENTS:
     height: 300px !important;
     background-attachment: scroll;
   }
+
+  .tab-content {
+    max-height: 170px !important;
+  }
+
+  .nav-justified>li {
+    width: 33%;
+    float: left !important;
+  }
+  .s-lg-form-control {
+    margin-right: 12px;
+  }
 }
 
 .tab-content {
@@ -65,15 +77,6 @@ CONTENTS:
   color: white;
 }
 
-@media screen and (max-width: 767px) {
-  .nav-justified>li {
-    width: 33%;
-    float: left !important;
-  }
-  .s-lg-form-control {
-    margin-right: 12px;
-  }
-}
 
 @media screen and (max-width: 490px) {
   .s-lg-form-control {
@@ -189,11 +192,15 @@ CONTENTS:
   font-weight: bold;
 }
 
+#reserverooms > .row > .col-xs-12 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .button {
   padding: 1rem 5rem;
   color: #0066CC;
   background-color: white;
-  margin: 2rem;
   transition: all 0.3s;
   text-align: center;
   font-weight: bold;
@@ -232,6 +239,16 @@ CONTENTS:
 
 #s-lib-footer-public {
   display: none;
+}
+
+.jumbotron.logo {
+  text-align: center !important;
+  padding-left: 0 !important;
+}
+
+.jumbotron.logo > .col-xs-12 {
+  color: white;
+  margin-top: 2rem;
 }
 
 
