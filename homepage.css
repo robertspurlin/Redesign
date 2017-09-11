@@ -25,7 +25,7 @@ CONTENTS:
 
 #s-lg-box-15999343-container {
   padding: 0;
-  margin-top: -0.95rem;
+  margin-top: -1.05rem;
   background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   height: 455px;
   background-attachment: fixed;
@@ -41,6 +41,8 @@ CONTENTS:
   align-items: center;
   -webkit-justify-content: center;
   -webkit-align-items: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 @media screen and (min-width: 1500px) {
@@ -111,39 +113,39 @@ CONTENTS:
 /* 3 Column Bar
 ==============================================================================*/
 
-#api_hours_today_iid907_lid2270 {
-  font-size: 300%;
+#api_hours_today_iid907_lid2270, .statnumber {
+  font-size: 200%;
   font-weight: bold;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 410px) {
-  #api_hours_today_iid907_lid2270 {
+  #api_hours_today_iid907_lid2270, .statnumber {
     font-size: 110%;
   }
 }
 
 @media screen and (max-width: 480px) and (min-width: 411px) {
-  #api_hours_today_iid907_lid2270 {
+  #api_hours_today_iid907_lid2270, .statnumber {
     font-size: 150%;
   }
 }
 
 @media screen and (max-width: 580px) and (min-width: 481px) {
-  #api_hours_today_iid907_lid2270 {
-    font-size: 200%;
+  #api_hours_today_iid907_lid2270, .statnumber {
+    font-size: 175%;
   }
 }
 
 @media screen and (max-width: 700px) and (min-width: 581px) {
-  #api_hours_today_iid907_lid2270 {
-    font-size: 200%;
+  #api_hours_today_iid907_lid2270, .statnumber {
+    font-size: 180%;
   }
 }
 
 @media screen and (max-width: 800px) and (min-width: 701px) {
-  #api_hours_today_iid907_lid2270 {
-    font-size: 250%;
+  #api_hours_today_iid907_lid2270, .statnumber {
+    font-size: 200%;
   }
 }
 
@@ -157,13 +159,12 @@ CONTENTS:
 }
 
 .stats p {
-  margin: 5px 0;
+  margin: 10px 0;
+  font-size: 100% !important;
 }
 
 .stats {
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 #gethelp > .row {
@@ -192,13 +193,8 @@ CONTENTS:
   font-weight: bold;
 }
 
-#reserverooms > .row > .col-xs-12 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .button {
-  padding: 1rem 5rem;
+  padding: 1rem 0;
   color: #0066CC;
   background-color: white;
   transition: all 0.3s;
@@ -206,6 +202,8 @@ CONTENTS:
   font-weight: bold;
   word-wrap: break-word;
   white-space: pre;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .button:hover {
@@ -241,15 +239,35 @@ CONTENTS:
   display: none;
 }
 
-.jumbotron.logo {
-  text-align: center !important;
+#s-lib-scroll-top {
+  display: none !important;
+}
+
+blockquote {
+  background: url(https://libapps.s3.amazonaws.com/accounts/123588/images/bg-quote1.png) no-repeat;
+  color: #a5a4a4;
+  font-style: italic;
+  margin: 0 30px;
+  padding: 30px 30px 30px 50px;
+  font-size: 2em;
+  border-left: none;
+}
+
+.dean {
+  max-width: 300px;
+  max-height: 294px;
+}
+
+@media screen and (max-width: 991px) {
+  .dean {
+    margin-bottom: 3rem;
+  }
+}
+
+#s-lg-content-35668060 ul {
   padding-left: 0 !important;
 }
 
-.jumbotron.logo > .col-xs-12 {
-  color: white;
-  margin-top: 2rem;
-}
 
 
 /* Testing grounds

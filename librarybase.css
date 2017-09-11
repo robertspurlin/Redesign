@@ -8,6 +8,10 @@ Base Header CSS.
   display: none;
 }
 
+#s-lg-public-skiplink {
+  display: none !important;
+}
+
 *:hover, *:active, *:focus {
   outline: 0 !important;
 }
@@ -76,6 +80,43 @@ body {
   transform: rotate(0);
   -ms-transform: rotate(0);
   -webkit-transform: rotate(0);
+}
+
+.jumbotron.logo {
+  text-align: center !important;
+  padding-left: 0 !important;
+}
+
+.libraryheader {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+}
+
+.libraryheader > a h3, .libraryheader > a h3:hover {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.mtblue {
+  background-color: #155fa2;
+}
+
+.mtbluetxt {
+  color: #155fa2;
+}
+
+.navbar-menu .nav li {
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 788px) {
+  .navbar-menu .nav li {
+    margin: 0 !important;
+  }
 }
 
 
