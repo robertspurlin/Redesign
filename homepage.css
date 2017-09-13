@@ -4,6 +4,8 @@ Style arguments for the home page.
 
 CONTENTS:
 
+i. Imports on google fonts only used on library homepage
+
 1. Floating search bar with background image, home page
 2. 3 Column Bar, pulled from MT's home page
 3. Other/Unclassified
@@ -11,6 +13,7 @@ CONTENTS:
 
 ==============================================================================*/
 
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 /* Floating Search Bar
 ==============================================================================*/
@@ -245,9 +248,9 @@ CONTENTS:
 
 blockquote {
   background: url(https://libapps.s3.amazonaws.com/accounts/123588/images/bg-quote1.png) no-repeat;
-  color: #a5a4a4;
+  color: #636363;
   font-style: italic;
-  margin: 0 30px;
+  margin: 30px 30px 0 30px;
   padding: 30px 30px 30px 50px;
   font-size: 2em;
   border-left: none;
@@ -268,7 +271,34 @@ blockquote {
   padding-left: 0 !important;
 }
 
+#s-lg-content-35668060 li {
+  list-style: none;
+  padding-top: 0.5rem;
+}
 
+#s-lg-col-1 {
+  padding: 0;
+}
+
+#s-lg-box-16132053 {
+  margin-bottom: 0 !important;
+}
+
+.s-lg-box-wrapper-19203087 {
+  margin-top: -2rem;
+}
+
+.signature {
+  font-family: "Dancing Script", cursive;
+}
+
+#s-la-widget-5920 {
+  border: 0;
+}
+
+#s-la-widget-5920 li {
+  border-bottom: 0;
+}
 
 /* Testing grounds
 ==============================================================================*/
