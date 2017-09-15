@@ -29,7 +29,7 @@ i. Imports on google fonts only used on library homepage
 #s-lg-box-15999343-container {
   padding: 0;
   margin-top: -1.05rem;
-  background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   height: 455px;
   background-attachment: fixed;
   background-position: center;
@@ -75,11 +75,14 @@ i. Imports on google fonts only used on library homepage
 
 .tab-content {
   overflow: hidden;
-  max-height: 266px;
+  max-height: 280px;
 }
 
 .transparent-box {
   color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(255,255,255,.5);
 }
 
 
@@ -294,11 +297,72 @@ blockquote {
 
 #s-la-widget-5920 {
   border: 0;
+  margin-top: 3rem;
 }
 
 #s-la-widget-5920 li {
   border-bottom: 0;
 }
 
+#s-la-widget-2396 {
+  border: 0;
+}
+
 /* Testing grounds
 ==============================================================================*/
+
+.home1 .bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/home1.jpg);
+}
+
+.home2 .bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/home2.jpeg);
+}
+
+.home3 .bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/home3.jpg);
+}
+
+.home1, .home2, .home3 {
+  height: 240px;
+  overflow: hidden;
+}
+
+.bg {
+  transition: all 0.3s;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+.bg:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.nopad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bg h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.row.marginfix {
+  margin-right: 0;
+  margin-left: 0;
+}
