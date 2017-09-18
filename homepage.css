@@ -29,39 +29,35 @@ i. Imports on google fonts only used on library homepage
 #s-lg-box-15999343-container {
   padding: 0;
   margin-top: -1.05rem;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
-  height: 455px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
+  background-size: cover;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
 
-@media screen and (min-width: 1500px) {
-  #s-lg-box-15999343-container {
-    height: 700px !important;
-  }
-}
-
 @media screen and (max-width: 767px) {
   #s-lg-box-15999343-container {
-    height: 300px !important;
     background-attachment: scroll;
   }
 
   .tab-content {
-    max-height: 170px !important;
+    max-height: 168px !important;
   }
 
   .nav-justified>li {
@@ -75,14 +71,11 @@ i. Imports on google fonts only used on library homepage
 
 .tab-content {
   overflow: hidden;
-  max-height: 280px;
+  max-height: 153px;
 }
 
 .transparent-box {
   color: white;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 30px;
-  box-shadow: 0 0 5px rgba(255,255,255,.5);
 }
 
 
@@ -365,4 +358,26 @@ blockquote {
 .row.marginfix {
   margin-right: 0;
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .paddingl {
+    padding: 4rem 7rem !important;
+  }
+
+  .paddingr {
+    padding: 4rem 3rem 4rem 0rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .paddingr {
+    padding: 4rem 3rem 4rem 3rem !important;
+  }
+}
+
+.bloglink {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0066CC;
 }
