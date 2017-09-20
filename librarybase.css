@@ -2,6 +2,7 @@
 Base Header CSS.
 ==============================================================================*/
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 /* The search bar that came with LibGuides */
 #s-lg-guide-header-search {
@@ -23,7 +24,7 @@ a:hover, a:active, a:focus {
 
 body {
   font-size: 15px;
-  font-family: "open_sansregular", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -128,6 +129,16 @@ body {
 
  .pb2m {
     padding-bottom: 2rem;
+  }
+
+  .mobileshow {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileshow {
+    display: none;
   }
 }
 

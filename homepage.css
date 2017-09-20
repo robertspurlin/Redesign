@@ -57,7 +57,7 @@ i. Imports on google fonts only used on library homepage
   }
 
   .tab-content {
-    max-height: 168px !important;
+    max-height: 200px !important;
   }
 
   .nav-justified>li {
@@ -71,7 +71,7 @@ i. Imports on google fonts only used on library homepage
 
 .tab-content {
   overflow: hidden;
-  max-height: 153px;
+  max-height: 185px;
 }
 
 .transparent-box {
@@ -114,37 +114,38 @@ i. Imports on google fonts only used on library homepage
 
 #api_hours_today_iid907_lid2270, .statnumber {
   font-size: 200%;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width: 410px) {
   #api_hours_today_iid907_lid2270, .statnumber {
-    font-size: 110%;
+    font-size: 110% !important;
   }
 }
 
 @media screen and (max-width: 480px) and (min-width: 411px) {
   #api_hours_today_iid907_lid2270, .statnumber {
-    font-size: 150%;
+    font-size: 150% !important;
   }
 }
 
 @media screen and (max-width: 580px) and (min-width: 481px) {
   #api_hours_today_iid907_lid2270, .statnumber {
-    font-size: 175%;
+    font-size: 175% !important;
   }
 }
 
 @media screen and (max-width: 700px) and (min-width: 581px) {
   #api_hours_today_iid907_lid2270, .statnumber {
-    font-size: 180%;
+    font-size: 180% !important;
   }
 }
 
 @media screen and (max-width: 800px) and (min-width: 701px) {
   #api_hours_today_iid907_lid2270, .statnumber {
-    font-size: 200%;
+    font-size: 200% !important;
   }
 }
 
@@ -371,8 +372,21 @@ blockquote {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .paddingl {
+    padding: 4rem 3rem !important;
+  }
+
   .paddingr {
     padding: 4rem 3rem 4rem 3rem !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .paddingl {
+    padding: 2rem 0 1rem 2rem !important;
+  }
+  .paddingr {
+    padding: 0 0 4rem 2rem !important;
   }
 }
 
@@ -380,4 +394,18 @@ blockquote {
   font-size: 20px;
   font-weight: bold;
   color: #0066CC;
+}
+
+.bloglink h4 {
+  margin-top: 3rem;
+}
+
+.section-list-links {
+  list-style: none;
+  padding: 0;
+}
+
+.s-la-widget {
+  background-color: transparent !important;
+  color: white !important;
 }
