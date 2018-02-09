@@ -49,11 +49,7 @@ $(document).ready(function() {
 
   $('body').on('click', '.navbar-toggle.collapsed', function() {
     $('.navbar-toggle').toggleClass('offnav onnav');
-  })
-
-
-
-  $('#reserverooms').hide();
+  });
 
   $('.roomtrigger').click(function(e) {
     e.preventDefault();
@@ -97,13 +93,30 @@ $(document).ready(function() {
     }
   });
 
-  if (document.getElementsByClassName("s-lib-cmd-bar").length != 0) {
-    document.getElementById("s-lg-guide-tabs").style.display = "block";
-  } else {
-    document.getElementById("s-lg-guide-tabs").style.display = "none";
-  }
-
   $('.chat').click(function(){
     $(this).toggleClass('open');
   });
+
+  backgroundChanger();
 });
+
+
+
+// Newsite V3, background fade function
+
+function backgroundChanger() {
+    const backgroundID = document.getElementById('s-lg-box-18167313-container');
+
+    if (!backgroundID) {
+      return;
+    }
+
+    const bgArr = ['DSC_4753_low_res.jpg', 'download.jpg', 'autumn-2015-test-alert-illus.jpg'];
+    const baseURL = "https://libapps.s3.amazonaws.com/accounts/123588/images/";
+
+    const rand = bgArr[Math.floor(Math.random() * bgArr.length)];
+
+    backgroundID.style.background = "url(" + baseURL + rand + ") no-repeat center center";
+    backgroundID.style.backgroundSize = "cover";
+
+}

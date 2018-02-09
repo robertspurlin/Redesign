@@ -4,11 +4,6 @@ Base CSS for all websites.
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
-/* The search bar that came with LibGuides */
-#s-lg-guide-header-search {
-  display: none;
-}
-
 #s-lg-public-skiplink {
   display: none !important;
 }
