@@ -17,9 +17,9 @@ a:hover, a:active, a:focus {
 }
 
 
-body {
+body, .navbar-top {
   font-size: 15px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
 
