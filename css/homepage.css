@@ -49,7 +49,7 @@ i. Imports on google fonts only used on library homepage
   margin-top: -1.05rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
-  min-height: 400px;
+  min-height: 325px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@ i. Imports on google fonts only used on library homepage
 }
 
 @media screen and (max-width: 490px) {
-  .s-lg-form-control {
+  .s-lg-form-control:not(#s-lg-guide-search) {
     width: 100% !important;
   }
 }
@@ -293,7 +293,7 @@ i. Imports on google fonts only used on library homepage
 
 .homev1 {
   background: rgba(230, 230, 230, 0.8);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
 }
 
