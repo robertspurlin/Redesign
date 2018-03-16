@@ -412,3 +412,7 @@ h3.size {
     margin: 0 !important;
   }
 }
+
+#s-lg-guide-name {
+  display: none;
+}
