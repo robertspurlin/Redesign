@@ -6,6 +6,10 @@
  **
  */
 
+
+// For use of let and const on older browsers that do not support ES6
+'use strict';
+
 $(document).ready(function() {
 
   // Alert system for MTSU.
@@ -30,7 +34,6 @@ $(document).ready(function() {
   });
 
   // ITD Header.
-
   let searchvisible = 0;
   $("#search-menu").click(function(e) {
     //This stops the page scrolling to the top on a # link.
@@ -47,15 +50,17 @@ $(document).ready(function() {
     }
   });
 
+  // Button animation trigger
   $('body').on('click', '.navbar-toggle.collapsed', function() {
     $('.navbar-toggle').toggleClass('offnav onnav');
   });
 
+  // Home page slider on featured buttons function
   $('.roomtrigger').click(function(e) {
     e.preventDefault();
 
-    if (document.getElementById('gethelp').style.display === "block") {
-      $('#gethelp').slideUp('fast');
+    if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+      $('#hours').slideUp('fast');
 
       setTimeout(function() {
         $('#reserverooms').slideToggle('fast')
@@ -63,6 +68,21 @@ $(document).ready(function() {
 
     } else {
       $('#reserverooms').slideToggle('fast');
+    }
+  });
+
+  $('.hourtrigger').click(function(e) {
+    e.preventDefault();
+
+    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+      $('#reserverooms').slideUp('fast');
+
+      setTimeout(function() {
+        $('#hours').slideToggle('fast')
+      }, 300);
+
+    } else {
+      $('#hours').slideToggle('fast');
     }
   });
 
@@ -76,9 +96,10 @@ $(document).ready(function() {
     });
   });
 
+  // Smooth scroll function
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      const target = $(this.hash);
+      let target = $(this.hash);
       if (screen.width <= 991) {
         setTimeout(function() {
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -96,27 +117,4 @@ $(document).ready(function() {
   $('.chat').click(function(){
     $(this).toggleClass('open');
   });
-
-  backgroundChanger();
 });
-
-
-
-// Newsite V3, background fade function
-
-function backgroundChanger() {
-    const backgroundID = document.getElementById('s-lg-box-18167313-container');
-
-    if (!backgroundID) {
-      return;
-    }
-
-    const bgArr = ['DSC_4753_low_res.jpg', 'download.jpg', 'autumn-2015-test-alert-illus.jpg'];
-    const baseURL = "https://libapps.s3.amazonaws.com/accounts/123588/images/";
-
-    const rand = bgArr[Math.floor(Math.random() * bgArr.length)];
-
-    backgroundID.style.background = "url(" + baseURL + rand + ") no-repeat center center";
-    backgroundID.style.backgroundSize = "cover";
-
-}

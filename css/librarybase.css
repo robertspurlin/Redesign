@@ -85,18 +85,23 @@ body, .navbar-top {
   padding-left: 0 !important;
 }
 
-.libraryheader {
+.librarylink, .librarylink:hover {
   color: white;
   text-align: center;
   font-weight: bold;
   font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.libraryheader > a h3, .libraryheader > a h3:hover {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: white;
-  text-decoration: none;
+.librarylink > h3, .librarylink > h3:hover {
+  color: #fff;
+  margin: 0;
+  width: fit-content;
+}
+
+.jumbotron a:not(.librarylink) {
+  display: block;
 }
 
 .mtblue {
@@ -126,7 +131,7 @@ h3.size {
   margin: 0 !important;
 }
 
-.dropdown-menu {
+header.mtlibraryheader .dropdown-menu   {
   text-align: center;
 }
 
@@ -220,13 +225,16 @@ h3.size {
     border-radius: 6px 6px 0px 0px;
     border-width: 4px 4px 4px;
     padding: 5px 15px;
+    background-color: #0066CC !important;
+    color: #ffffff !important;
+    border-color: #fff !important;
   }
 }
 
 @media screen and (min-width: 768px) {
   .chat {
     width: 400px;
-    top: 100px;
+    top: 300px;
     right: -400px;
   }
 
@@ -235,8 +243,8 @@ h3.size {
   }
 
   .chatbutton {
-    left: -55px;
-    top: 5px;
+    left: -64px;
+    top: 15px;
     transform: rotate(90deg);
     transform origin: top left;
     border-width: 0px 4px 4px;
@@ -264,6 +272,7 @@ h3.size {
   text-align: center;
   position: absolute;
   border-radius: 6px;
+  transition: all 0.3s;
 }
 
 .chatbutton:hover, .chatbutton:active, .chatbutton:focus {
@@ -283,12 +292,12 @@ h3.size {
 /* Search box in header adjustments */
 
 @media screen and (min-width: 1247px) {
-  #navbarmenu {
+  #navbarmenu, .darkblue .padding {
     padding: 0 10rem;
   }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1401px) {
   li.dropdown.mega-dropdown {
     position: relative !important;
   }
@@ -299,7 +308,7 @@ h3.size {
     padding: 0 1.5rem;
   }
 
-  .dropdown-menu {
+ header.mtlibraryheader .dropdown-menu {
     left: 5.1rem;
   }
 }
@@ -351,12 +360,12 @@ h3.size {
 }
 
 @media screen and (min-width: 1076px) {
-  .dropdown-menu {
+  header.mtlibraryheader .dropdown-menu {
     left: 0;
-    margin: 0 auto !important;
+    margin: 0 auto;
     min-width: 799px;
   }
-  .dropdown-menu.d-menu-right {
+   header.mtlibraryheader .dropdown-menu.d-menu-right {
     right: 0;
     left: auto;
   }
@@ -367,7 +376,7 @@ h3.size {
     flex-direction: column;
   }
 
-  .dropdown-menu {
+  header.mtlibraryheader .dropdown-menu {
     min-width: 100%;
     left: 0 !important;
   }
@@ -405,8 +414,8 @@ h3.size {
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-  .dropdown-menu {
+@media screen and (max-width: 1400px) and (min-width: 768px) {
+   header.mtlibraryheader .dropdown-menu {
     min-width: 100%;
     left: 0 !important;
     margin: 0 !important;
@@ -415,4 +424,90 @@ h3.size {
 
 #s-lg-guide-name {
   display: none;
+}
+
+.darkblue {
+  padding: 0.7rem 0;
+  background: #113e87;
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: -1rem;
+}
+
+.darkblue .padding {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.darkblue #api_hours_today_iid907_lid2270 {
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+}
+
+.darkblue p {
+  margin: 0;
+}
+
+.darkblue .hours-today {
+  float: left;
+}
+
+.hours-today {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.hours-col-loc {
+  display: none !important;
+}
+
+.s-lc-time {
+  font-weight: 700;
+}
+
+.row.marginfix {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .hours-today {
+    float: none !important;
+  }
+  .text-left-m {
+    margin-top: 0.25rem;
+  }
+  .headerflex {
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text-left-m {
+    text-align: left;
+  }
+
+  .text-right-m {
+    text-align: right;
+  }
+}
+
+.white {
+  color: #fff;
+}
+
+.headerflex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerflex p {
+  display: inline-block;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+#api_hours_today_iid907_lid2270 {
+  display: inline-block;
 }

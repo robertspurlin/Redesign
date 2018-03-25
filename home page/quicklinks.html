@@ -1,10 +1,10 @@
 <div class="row marginfix" style='background: rgb(249, 249, 249)'>
   <div class="col-sm-3 col-xs-6 text-center">
-    <a href='#gethelp' class='trigger'>
+    <a href='http://libraryguides.mtsu.edu/'>
       <div class="highlightcirc">
-        <i class="fa fa-comments fa-3x white" aria-hidden="true"></i>
+        <i class="fa fa-book fa-3x white" aria-hidden="true"></i>
       </div>
-      <h4 class="circblue">LET'S TALK</h4>
+      <h4 class="circblue">COURSE RESERVES</h4>
     </a>
   </div>
   <div class="col-sm-3 col-xs-6 text-center">
@@ -16,28 +16,177 @@
     </a>
   </div>
   <a href="http://library.mtsu.edu/technology.php">
-<div class="col-sm-3 col-xs-6 text-center">
-    <div class="highlightcirc">
-      <i class="fa fa-desktop fa-3x white" aria-hidden="true"></i>
+    <div class="col-sm-3 col-xs-6 text-center">
+      <div class="highlightcirc">
+        <i class="fa fa-desktop fa-3x white" aria-hidden="true"></i>
+      </div>
+      <h4 class="circblue">TECHNOLOGY</h4>
     </div>
-    <h4 class="circblue">TECHNOLOGY</h4>
+  </a>
+  <div class="col-sm-3 col-xs-6 text-center mobilehide">
+    <a href="#hours" class="hourtrigger">
+      <div class="highlightcirc"><i aria-hidden="true" class="fa fa-clock-o fa-3x white"></i></div>
+      <h4 class="circblue">HOURS</h4>
+    </a>
   </div>
-</a>
-<a href="http://library.mtsu.edu/hours.php">
-  <div class="col-sm-3 col-xs-6 text-center">
-    <div class="highlightcirc">
-      <i class="fa fa-clock-o fa-3x white" aria-hidden="true"></i>
+  <a href="/about/hours" class='mobileshow'>
+    <div class="col-xs-6 text-center">
+      <div class="highlightcirc"><i aria-hidden="true" class="fa fa-clock-o fa-3x white"></i></div>
+      <h4 class="circblue">HOURS</h4>
     </div>
-    <h4 class="circblue">HOURS</h4>
-  </div>
+  </a>
 </div>
-</a>
 
-<div id='gethelp'>
+
+
+<div id='hours' class='mobilehide'>
   <div class="row marginfix" style='background: rgb(249, 249, 249)'>
-    <div class="col-md-6 col-md-offset-3">
-      <iframe id="iframe_b510d405041315e3b8fdb5d7ebe9914c" name="iframe_b510d405041315e3b8fdb5d7ebe9914c" style="background: transparent; color: white;" src="https://v2.libanswers.com/chati.php?hash=b510d405041315e3b8fdb5d7ebe9914c&amp;referer_title=James%20E.%20Walker%20Library%20%7C%20Middle%20Tennessee%20State%20University"
-        title="Chat Widget" frameborder="0" scrolling="no" width="100%" height="217px"></iframe>
+    <div class="col-md-10 col-md-offset-1 col-xs-12 mt2">
+      <script src="https://api3.libcal.com/js/hours_grid.js?002"></script>
+      <div id="s-lc-whw0"></div>
+      <script>
+        $(function() {
+          var week0 = new $.LibCalWeeklyGrid($("#s-lc-whw0"), {
+            iid: 907,
+            lid: 0,
+            weeks: 1,
+            systemTime: true
+          });
+        });
+      </script>
+
+      <!-- Please note: The following styles are optional, feel free to modify! //-->
+      <style>
+        .s-lc-whw thead {
+          background-color: #F5F5F5;
+        }
+
+        .s-lc-whw-head-date {
+          color: #999;
+        }
+
+        .s-lc-whw-today-h {
+          background-color: #ddd;
+        }
+
+        .s-lc-whw-today {
+          background-color: #F5F5F5;
+        }
+
+        .s-lc-whw-bh {
+          text-align: right;
+          white-space: nowrap;
+        }
+
+        .s-lc-whw-locname {
+          font-weight: bold;
+        }
+
+        .s-lc-whw-sublocname {
+          padding-left: 10px !important;
+        }
+
+        .s-lc-whw-footnote {
+          color: #555;
+          font-size: 80%;
+        }
+
+        .s-lc-whw-footnote td:hover {
+          background-color: #fff !important;
+        }
+
+        /* Below styles can be removed if you are already using Bootstap v3 in host page */
+
+        .s-lc-whw-cont {
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 12px;
+        }
+
+        .s-lc-whw-pr,
+        .s-lc-whw-ne {
+          padding: 5px 10px;
+          font-size: 12px;
+          line-height: 1.5;
+          border-radius: 3px;
+          color: #333;
+          background-color: #fff;
+          border-color: #ccc;
+          display: inline-block;
+          margin-bottom: 0;
+          font-weight: 400;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          background-image: none;
+          border: 1px solid transparent;
+          white-space: nowrap;
+        }
+
+        .s-lc-whw-pr:disabled {
+          background-color: #efefef;
+        }
+
+        .s-lc-whw-ne:disabled {
+          background-color: #efefef;
+        }
+
+        .s-lc-whw {
+          width: 100%;
+          margin-bottom: 20px;
+          max-width: 100%;
+          background-color: transparent;
+          border-bottom: none;
+          border-left: none;
+          border-collapse: collapse;
+          border-spacing: 0;
+        }
+
+        .s-lc-whw>tbody>tr>td {
+          padding: 5px;
+        }
+
+        .s-lc-whw>thead>tr>th {
+          vertical-align: bottom;
+          border-bottom: 2px solid #ddd;
+          padding: 5px;
+        }
+
+        .s-lc-whw th {
+          border-top: none;
+          border-bottom: none;
+          border-right: none;
+        }
+
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+
+        @media (max-width: 767px) {
+          .s-lc-whw-cont .table-responsive {
+            width: 100%;
+            margin-bottom: 15px;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            border: 1px solid #ddd;
+            -webkit-overflow-scrolling: touch;
+          }
+          .s-lc-whw td {
+            white-space: nowrap;
+          }
+        }
+      </style>
+    </div>
+    <div class="col-md-10 col-md-offset-1 col-xs-12">
+      <div id='api_upc_cid3160_iid907' class='text-center mb2'></div>
+      <script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=907&amp;m=upc&amp;cid=3160&amp;c=&amp;d=&amp;l=7&amp;simple=ul_date&amp;context=object&amp;format=js"></script>
     </div>
   </div>
 </div>
@@ -45,9 +194,8 @@
 <div id="reserverooms">
   <div class="row text-center marginfix" style='background: rgb(249, 249, 249)'>
     <h2>I want to reserve...</h2>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/groupstudy" class="button col-xs-12" target="_blank">the Group Study Room</a></div>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/meetingplace2" class="button col-xs-12" target="_blank">Meeting Place 2</a></div>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/meetingplace4" class="button col-xs-12" target="_blank">Meeting Place 4</a></div>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/presentation" class="button col-xs-12" target="_blank">a Presentation Practice Room</a></div>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/groupstudy" class="button col-xs-12" target="_blank">the Group Study Room</a></div>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/meetingplace2" class="button col-xs-12" target="_blank">Meeting Place 2</a></div>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"><a href="http://mtsu.libcal.com/booking/presentation" class="button col-xs-12" target="_blank">a Presentation Practice Room</a></div>
   </div>
 </div>

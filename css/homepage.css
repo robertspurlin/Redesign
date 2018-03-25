@@ -17,7 +17,7 @@ i. Imports on google fonts only used on library homepage
 /* Floating Search Bar
 ==============================================================================*/
 
-#s-lg-box-15999343, #s-lg-box-18167313 {
+#s-lg-box-15999343, #s-lg-box-18167313, #s-lg-box-18190481 {
   background: transparent;
 }
 
@@ -25,30 +25,11 @@ i. Imports on google fonts only used on library homepage
   padding: 0;
 }
 
-.darkblue {
-  padding: 0.5rem 0;
-  background: #113e87;
-  color: white;
-}
-
-.darkblue #api_hours_today_iid907_lid2270 {
-  font-size: 15px !important;
-  line-height: 1.75 !important;
-}
-
-.darkblue p {
-  margin: 0;
-}
-
-.darkblue .hours-today {
-  float: left;
-}
-
-#s-lg-box-15999343-container {
+#s-lg-box-15999343-container, #s-lg-box-18167313-container {
   padding: 0;
   margin-top: -1.05rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   min-height: 325px;
   background-attachment: fixed;
   background-position: center;
@@ -68,7 +49,7 @@ i. Imports on google fonts only used on library homepage
 }
 
 @media screen and (max-width: 767px) {
-  #s-lg-box-15999343-container {
+  #s-lg-box-15999343-container, #s-lg-box-18167313-container {
     background-attachment: scroll;
   }
   .tab-content {
@@ -135,15 +116,6 @@ i. Imports on google fonts only used on library homepage
 
 /* Quick Links
 ==============================================================================*/
-.hours-today {
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-
-.hours-col-loc {
-  display: none !important;
-}
-
 .stats p {
   margin: 10px 0;
   font-size: 100% !important;
@@ -162,15 +134,7 @@ i. Imports on google fonts only used on library homepage
   cursor: pointer;
 }
 
-#reserverooms {
-  display: none;
-}
-
 #reserverooms>.row {
-  background: rgb(0, 102, 204);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 102, 204, 1)), color-stop(6%, rgba(249, 249, 249, 1)));
-  background: linear-gradient(to bottom, rgba(0, 102, 204, 1) 0%, rgba(249, 249, 249, 1) 6%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066cc', endColorstr='#f9f9f9', GradientType=0);
   padding-top: 2rem;
   padding-bottom: 4rem;
   margin-right: 0;
@@ -219,6 +183,15 @@ i. Imports on google fonts only used on library homepage
   text-decoration: none;
 }
 
+#reserverooms, #hours {
+  display: none;
+}
+
+#api_upc_cid3160_iid907 li {
+  display: inline-block;
+  width: 50%;
+}
+
 
 /* Other
 ==============================================================================*/
@@ -255,13 +228,8 @@ i. Imports on google fonts only used on library homepage
   padding-right: 0;
 }
 
-.row.marginfix {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 @media screen and (max-width: 767px) {
-  #s-lg-box-15999343 {
+  #s-lg-box-15999343, #s-lg-box-18167313 {
     margin: 0;
   }
 
@@ -337,35 +305,11 @@ i. Imports on google fonts only used on library homepage
   margin: -1.1rem 0 -2.1rem 0;
 }
 
-.s-lc-time {
-  font-weight: 700;
-}
-
 #s-lg-guide-header-search {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .text-left-m {
-    padding: 0;
-    width: calc(50% - 15px);
-    text-align: left;
-  }
-
-  .text-right-m {
-    text-align: right;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .text-left-m {
-    margin-top: 0.25rem;
-  }
-
-  .hours-today {
-    float: none !important;
-  }
-
   #s-lg-content-40031211 .col-sm-3 {
     min-height: 200px;
   }
@@ -378,49 +322,34 @@ i. Imports on google fonts only used on library homepage
 /* Version 2 libraryguides.mtsu.edu/newsite_v2
 ==============================================================================*/
 
-#s-lg-box-18167313-container {
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-repeat: no-repeat;
-}
-
-#s-lg-box-18167313 {
-  background: url('https://libapps.s3.amazonaws.com/accounts/123588/images/grad.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 300px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .spread a {
   margin-right: 0.5em;
 }
 
-@media screen and (max-width: 991px) {
-  #s-lg-box-18167313 {
-    background: rgba(230, 230, 230, 0.9);
-  }
-}
-
 #s-lg-box-18190481-container {
   background:
-  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   #s-lg-box-18167310, #s-lg-box-18167309 {
     margin: 5rem 0;
   }
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
 }
