@@ -4,20 +4,14 @@ Style arguments for the home page.
 
 CONTENTS:
 
-i. Imports on google fonts only used on library homepage
-
 1. Floating search bar with background image, home page
 2. Other/Unclassified
 3. Version 2 Specifics (//libraryguides.mtsu.edu/newsite_v2)
 
-==============================================================================*/
-
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
 /* Floating Search Bar
 ==============================================================================*/
 
-#s-lg-box-15999343, #s-lg-box-18167313, #s-lg-box-18190481 {
+#s-lg-box-15999343, #s-lg-box-18167313, #s-lg-box-18190481, #s-lg-box-18813369 {
   background: transparent;
 }
 
@@ -44,8 +38,8 @@ i. Imports on google fonts only used on library homepage
   -ms-flex-align: center;
   align-items: center;
   background-size: cover;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -80,7 +74,7 @@ i. Imports on google fonts only used on library homepage
 }
 
 .transparent-box {
-  color: white;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 490px) {
@@ -91,14 +85,14 @@ i. Imports on google fonts only used on library homepage
 
 .nav-tabs.nav-justified>li>a {
   border-radius: 0 !important;
-  color: white;
+  color: #ffffff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .nav-tabs.nav-justified>li>a:hover {
   color: black;
-  background: white;
+  background: #ffffff;
 }
 
 .nav-tabs.nav-justified>li.active>a {
@@ -116,25 +110,7 @@ i. Imports on google fonts only used on library homepage
 
 /* Quick Links
 ==============================================================================*/
-.stats p {
-  margin: 10px 0;
-  font-size: 100% !important;
-}
-
-.stats {
-  margin: 0;
-}
-
-.stats .col-sm-4 {
-  background: rgba(50, 50, 100, 0.65) !important;
-  background-clip: padding-box !important;
-}
-
-.trigger, .roomtrigger {
-  cursor: pointer;
-}
-
-#reserverooms>.row {
+#reserverooms>.row, #howdoi>.row {
   padding-top: 2rem;
   padding-bottom: 4rem;
   margin-right: 0;
@@ -143,20 +119,14 @@ i. Imports on google fonts only used on library homepage
   border-bottom: 1px solid #555555;
 }
 
-#reserverooms>.row h2 {
-  padding: 0;
-  color: #0066CC;
-  font-weight: bold;
-}
-
-#reserverooms>.row .button {
+#reserverooms>.row .button, #howdoi>.row .button {
   background-color: #0066CC;
-  color: white;
+  color: #ffffff;
   min-height: 48px;
 }
 
-#reserverooms>.row .button:hover {
-  background-color: white;
+#reserverooms>.row .button:hover, #howdoi>.row .button:hover {
+  background-color: #ffffff;
   color: #0066CC;
   border: 1px solid #0066CC;
 }
@@ -164,7 +134,7 @@ i. Imports on google fonts only used on library homepage
 .button {
   padding: 1rem 0;
   color: #0066CC;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
@@ -178,12 +148,12 @@ i. Imports on google fonts only used on library homepage
 
 .button:hover {
   background-color: #0066CC;
-  color: white;
-  border: 1px solid white;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   text-decoration: none;
 }
 
-#reserverooms, #hours {
+#reserverooms, #hours, #coursereserves, #howdoi {
   display: none;
 }
 
@@ -202,7 +172,7 @@ i. Imports on google fonts only used on library homepage
 
 #s-lg-box-16162454 {
   background: red;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   text-align: center;
   margin-top: -1.2rem;
@@ -239,21 +209,6 @@ i. Imports on google fonts only used on library homepage
   }
 }
 
-.bloglink {
-  font-size: 20px;
-  font-weight: bold;
-  color: #0066CC;
-}
-
-.bloglink h4 {
-  margin-top: 3rem;
-}
-
-.section-list-links {
-  list-style: none;
-  padding: 0;
-}
-
 
 #s-lg-box-16302937 {
   margin-bottom: -1.1rem;
@@ -281,8 +236,30 @@ i. Imports on google fonts only used on library homepage
   margin: 2rem auto;
 }
 
+.iconhvr i {
+  transition: all 0.3s ease-in-out;
+}
+
+.iconhvr i:last-child {
+  margin: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.iconhvr:hover i:first-child {
+  opacity: 0;
+}
+
+.iconhvr:hover i:last-child {
+  opacity: 1;
+}
+
+.iconhvr:hover, .iconhvr:focus, .iconhvr:active {
+  text-decoration: none;
+}
+
 .white {
-  color: white;
+  color: #ffffff;
 }
 
 .circblue {
@@ -313,6 +290,9 @@ i. Imports on google fonts only used on library homepage
   #s-lg-content-40031211 .col-sm-3 {
     min-height: 200px;
   }
+  .col-xs-6.text-center.mobileshow {
+    min-height: 200px;
+  }
 }
 
 #s-lg-guide-main {
@@ -326,7 +306,9 @@ i. Imports on google fonts only used on library homepage
   margin-right: 0.5em;
 }
 
-#s-lg-box-18190481-container {
+
+/* Parallax on bottom of page. First ID is for version 2, 2nd is for version 1 */
+#s-lg-box-18190481-container, #s-lg-box-18813369-container {
   background:
   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');

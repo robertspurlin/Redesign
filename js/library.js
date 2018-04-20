@@ -56,11 +56,26 @@ $(document).ready(function() {
   });
 
   // Home page slider on featured buttons function
+
   $('.roomtrigger').click(function(e) {
     e.preventDefault();
 
     if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
       $('#hours').slideUp('fast');
+
+      setTimeout(function() {
+        $('#reserverooms').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+      $('#coursereserves').slideUp('fast');
+
+      setTimeout(function() {
+        $('#reserverooms').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+      $('#howdoi').slideUp('fast');
 
       setTimeout(function() {
         $('#reserverooms').slideToggle('fast')
@@ -81,8 +96,80 @@ $(document).ready(function() {
         $('#hours').slideToggle('fast')
       }, 300);
 
+    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+      $('#coursereserves').slideUp('fast');
+
+      setTimeout(function() {
+        $('#hours').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+      $('#howdoi').slideUp('fast');
+
+      setTimeout(function() {
+        $('#hours').slideToggle('fast')
+      }, 300);
+
     } else {
       $('#hours').slideToggle('fast');
+    }
+  });
+
+  $('.coursetrigger').click(function(e) {
+    e.preventDefault();
+
+    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+      $('#reserverooms').slideUp('fast');
+
+      setTimeout(function() {
+        $('#coursereserves').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+      $('#hours').slideUp('fast');
+
+      setTimeout(function() {
+        $('#coursereserves').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+      $('#howdoi').slideUp('fast');
+
+      setTimeout(function() {
+        $('#coursereserves').slideToggle('fast')
+      }, 300);
+
+    } else {
+      $('#coursereserves').slideToggle('fast');
+    }
+  });
+
+  $('.howdoitrigger').click(function(e) {
+    e.preventDefault();
+
+    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+      $('#reserverooms').slideUp('fast');
+
+      setTimeout(function() {
+        $('#howdoi').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+      $('#hours').slideUp('fast');
+
+      setTimeout(function() {
+        $('#howdoi').slideToggle('fast')
+      }, 300);
+
+    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+      $('#coursereserves').slideUp('fast');
+
+      setTimeout(function() {
+        $('#howdoi').slideToggle('fast')
+      }, 300);
+
+    } else {
+      $('#howdoi').slideToggle('fast');
     }
   });
 
@@ -96,25 +183,7 @@ $(document).ready(function() {
     });
   });
 
-  // Smooth scroll function
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      let target = $(this.hash);
-      if (screen.width <= 991) {
-        setTimeout(function() {
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          const targetscroll = target.offset().top;
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: targetscroll
-            }, 500);
-          }
-        }, 300);
-      }
-    }
-  });
-
-  $('.chat').click(function(){
+  $('.chat').click(function() {
     $(this).toggleClass('open');
   });
 });

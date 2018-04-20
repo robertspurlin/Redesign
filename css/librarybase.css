@@ -336,7 +336,7 @@ header.mtlibraryheader .dropdown-menu {
     display: flex !important;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1600px;
     margin: 0 auto;
   }
