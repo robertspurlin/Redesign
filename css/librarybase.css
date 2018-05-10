@@ -1,33 +1,35 @@
 /* Redesign - James E. Walker Library, MTSU. 2017 Amy York and Robert Spurlin
 Base CSS for all websites.
 ==============================================================================*/
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 #s-lg-public-skiplink {
   display: none !important;
 }
 
-*:hover, *:active, *:focus {
+*:active,
+*:focus,
+*:hover {
   outline: 0 !important;
 }
 
-a:hover, a:active, a:focus {
+a:active,
+a:focus,
+a:hover {
   outline: 0 !important;
 }
 
-
-body, .navbar-top {
+.navbar-top,
+body {
   font-size: 15px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
 
-.toplinks, .toplinks > li > a {
+.toplinks,
+.toplinks > li > a {
   font-size: 13.5px;
-  color: rgb(51, 51, 51);
+  color: #333333;
 }
-
 
 /* Animation of the hamburger menu when clicked */
 .navbar-toggle.collapsed > .icon-bar {
@@ -35,9 +37,9 @@ body, .navbar-top {
   transition: all 0.2s;
 }
 
-.navbar-toggle.collapsed  > .middle {
+.navbar-toggle.collapsed > .middle {
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
 }
 
 .navbar-toggle.collapsed.onnav > .top {
@@ -85,16 +87,18 @@ body, .navbar-top {
   padding-left: 0 !important;
 }
 
-.librarylink, .librarylink:hover {
+.librarylink,
+.librarylink:hover {
   color: white;
   text-align: center;
   font-weight: bold;
-  font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none;
   display: inline-block;
 }
 
-.librarylink > h3, .librarylink > h3:hover {
+.librarylink > h3,
+.librarylink > h3:hover {
   color: #fff;
   margin: 0;
   width: fit-content;
@@ -126,7 +130,6 @@ h3.size {
     margin: 0 !important;
   }
 }
-
 .dropdown.mega-dropdown {
   margin: 0 !important;
 }
@@ -144,17 +147,19 @@ header.mtlibraryheader .dropdown-menu {
   margin-bottom: 2rem !important;
 }
 
-.navbar-center .open > a, .navbar-center .open > a:focus, .navbar-center .open > a:hover {
+.navbar-center .open > a,
+.navbar-center .open > a:focus,
+.navbar-center .open > a:hover {
   background: #3d87cf !important;
 }
 
 /* Helper classes for mobile */
 @media screen and (max-width: 767px) {
- .mobilehide {
-    display: none;
+  .mobilehide {
+    display: none !important;
   }
 
- .pb2m {
+  .pb2m {
     padding-bottom: 2rem;
   }
 
@@ -162,14 +167,11 @@ header.mtlibraryheader .dropdown-menu {
     display: block;
   }
 }
-
 @media screen and (min-width: 768px) {
   .mobileshow {
     display: none;
   }
 }
-
-
 .footeradjust {
   margin: auto;
   padding: 10px;
@@ -211,23 +213,24 @@ header.mtlibraryheader .dropdown-menu {
 }
 
 /* Chat box */
-
 @media screen and (max-width: 767px) {
   .chat {
     width: 100%;
     bottom: -347px;
     left: 0;
   }
+
   .chat.open {
     bottom: 0;
   }
+
   .chatbutton {
     height: 43px;
     border-bottom: 0;
     bottom: 0;
     right: 50px;
     top: -40px;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 0 0;
     border-width: 4px 4px 4px;
     padding: 5px 15px;
     background-color: #0066CC !important;
@@ -235,7 +238,6 @@ header.mtlibraryheader .dropdown-menu {
     border-color: #fff !important;
   }
 }
-
 @media screen and (min-width: 768px) {
   .chat {
     width: 400px;
@@ -251,15 +253,14 @@ header.mtlibraryheader .dropdown-menu {
     left: -64px;
     top: 15px;
     transform: rotate(90deg);
-    transform origin: top left;
-    border-width: 0px 4px 4px;
+    border-width: 0 4px 4px;
     padding: 10px;
   }
+
   .slideout {
     border-right: 0;
   }
 }
-
 .chat {
   position: fixed;
   z-index: 10000;
@@ -281,12 +282,15 @@ header.mtlibraryheader .dropdown-menu {
   transition: all 0.3s;
 }
 
-.chatbutton:hover, .chatbutton:active, .chatbutton:focus {
+.chatbutton:active,
+.chatbutton:focus,
+.chatbutton:hover {
   color: #fff;
   text-decoration: none;
 }
 
-#gethelp, .slideout {
+#gethelp,
+.slideout {
   width: 100%;
   min-height: 100%;
 }
@@ -306,31 +310,27 @@ header.mtlibraryheader .dropdown-menu {
     min-height: 340px;
   }
 }
-
 /* Search box in header adjustments */
-
 @media screen and (min-width: 1247px) {
-  #navbarmenu, .darkblue .padding {
+  #navbarmenu,
+.darkblue .padding {
     padding: 0 10rem;
   }
 }
-
 @media screen and (min-width: 1401px) {
   li.dropdown.mega-dropdown {
     position: relative !important;
   }
 }
-
 @media screen and (max-width: 1246px) and (min-width: 768px) {
   #navbarmenu {
     padding: 0 1.5rem;
   }
 
- header.mtlibraryheader .dropdown-menu {
+  header.mtlibraryheader .dropdown-menu {
     left: 5.1rem;
   }
 }
-
 @media screen and (min-width: 768px) {
   #navbarmenu {
     display: flex !important;
@@ -341,7 +341,8 @@ header.mtlibraryheader .dropdown-menu {
     margin: 0 auto;
   }
 
-  #navbarmenu:before, #navbarmenu:after {
+  #navbarmenu:after,
+#navbarmenu:before {
     display: none !important;
   }
 
@@ -349,11 +350,9 @@ header.mtlibraryheader .dropdown-menu {
     display: inline-block;
   }
 }
-
 .navbar-menu .nav li {
   vertical-align: inherit;
 }
-
 
 #s-lg-guide-search {
   background-color: transparent !important;
@@ -364,7 +363,8 @@ header.mtlibraryheader .dropdown-menu {
   padding: 0 !important;
 }
 
-#s-lg-guide-search::placeholder, #s-lg-guide-search {
+#s-lg-guide-search,
+#s-lg-guide-search::placeholder {
   color: #fff !important;
   font-weight: 600 !important;
 }
@@ -383,12 +383,12 @@ header.mtlibraryheader .dropdown-menu {
     margin: 0 auto;
     min-width: 799px;
   }
-   header.mtlibraryheader .dropdown-menu.d-menu-right {
+
+  header.mtlibraryheader .dropdown-menu.d-menu-right {
     right: 0;
     left: auto;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1075px) {
   #navbarmenu {
     flex-direction: column;
@@ -403,7 +403,8 @@ header.mtlibraryheader .dropdown-menu {
     margin: 1rem 0;
   }
 
-  .nav.navbar-nav:not(.toplinks), .searchbox {
+  .nav.navbar-nav:not(.toplinks),
+.searchbox {
     width: 100%;
   }
 
@@ -411,19 +412,16 @@ header.mtlibraryheader .dropdown-menu {
     order: 2;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 826px) {
   li.dropdown > a {
     padding: 12px 10px !important;
   }
 }
-
 @media screen and (max-width: 767px) {
   .searchbox {
     margin-bottom: 2rem;
   }
 }
-
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
   .techfix {
     margin-left: -46rem !important;
@@ -431,15 +429,13 @@ header.mtlibraryheader .dropdown-menu {
     left: 0;
   }
 }
-
 @media screen and (max-width: 1400px) and (min-width: 768px) {
-   header.mtlibraryheader .dropdown-menu {
+  header.mtlibraryheader .dropdown-menu {
     min-width: 100%;
     left: 0 !important;
     margin: 0 !important;
   }
 }
-
 #s-lg-guide-name {
   display: none;
 }
@@ -492,15 +488,16 @@ header.mtlibraryheader .dropdown-menu {
   .hours-today {
     float: none !important;
   }
+
   .text-left-m {
     margin-top: 0.25rem;
   }
+
   .headerflex {
     justify-content: center !important;
     margin-top: 1rem;
   }
 }
-
 @media screen and (min-width: 768px) {
   .text-left-m {
     text-align: left;
@@ -510,12 +507,12 @@ header.mtlibraryheader .dropdown-menu {
     text-align: right;
   }
 }
-
 .white {
   color: #fff;
 }
 
-.white:hover, .white:focus {
+.white:focus,
+.white:hover {
   color: #fff;
 }
 
@@ -533,3 +530,125 @@ header.mtlibraryheader .dropdown-menu {
 #api_hours_today_iid907_lid2270 {
   display: inline-block;
 }
+
+table.department td {
+  padding-left: 5px;
+  border-bottom: 1px solid #eee;
+  padding-right: 10px;
+}
+
+table.name {
+  width: 100%;
+}
+table.name tr:nth-child(even) {
+  background-color: #f5f0f0;
+}
+
+table.liaisons {
+  width: 100%;
+}
+table.liaisons td {
+  width: 50%;
+}
+
+@media only screen and (max-width: 760px) {
+  /* Force table to not be like tables anymore */
+  table.department,
+table.liaisons,
+table.name {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  table.department tbody,
+table.department td,
+table.department th,
+table.department thead,
+table.department tr,
+table.liaisons tbody,
+table.liaisons td,
+table.liaisons th,
+table.liaisons thead,
+table.liaisons tr,
+table.name tbody,
+table.name td,
+table.name th,
+table.name thead,
+table.name tr {
+    display: block;
+    word-wrap: break-word;
+  }
+  table.department thead tr,
+table.liaisons thead tr,
+table.name thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  table.department tr,
+table.liaisons tr,
+table.name tr {
+    border: 1px solid #ccc;
+  }
+  table.department td,
+table.liaisons td,
+table.name td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+  }
+  table.department td:before,
+table.liaisons td:before,
+table.name td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: -20px;
+    width: auto;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  table.department td:only-child {
+    margin-top: 0;
+  }
+  table.department td:nth-of-type(1):not(:only-child):before {
+    content: "Room #";
+  }
+  table.department td:nth-of-type(2):before {
+    content: "Name";
+  }
+  table.department td:nth-of-type(3):before {
+    content: "Function";
+  }
+  table.department td:nth-of-type(4):before {
+    content: "Phone";
+  }
+  table.department td:nth-of-type(5):before {
+    content: "Email";
+  }
+
+  table.name td:nth-of-type(1):not(:only-child):before {
+    content: "Name";
+  }
+  table.name td:nth-of-type(2):before {
+    content: "Department/Unit";
+  }
+  table.name td:nth-of-type(3):before {
+    content: "Phone";
+  }
+  table.name td:nth-of-type(4):before {
+    content: "Email";
+  }
+
+  table.liaisons td:nth-of-type(1):not(:only-child):before {
+    content: "Department/Program";
+  }
+  table.liaisons td:nth-of-type(2):before {
+    content: "Library Liaison";
+  }
+}
+
+/*# sourceMappingURL=librarybase.css.map */
