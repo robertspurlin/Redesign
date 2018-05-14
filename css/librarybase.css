@@ -650,5 +650,35 @@ table.name td:before {
     content: "Library Liaison";
   }
 }
+.button {
+  padding: 1rem 0;
+  color: #0066CC;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  font-weight: bold;
+  word-wrap: break-word;
+  white-space: pre;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #0066CC;
+}
+.button:hover {
+  background-color: #0066CC;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+}
+.button.blue {
+  background-color: #0066CC;
+  color: #ffffff;
+  min-height: 48px;
+}
+.button.blue:hover {
+  background-color: #ffffff;
+  color: #0066CC;
+  border: 1px solid #0066CC;
+}
 
 /*# sourceMappingURL=librarybase.css.map */
