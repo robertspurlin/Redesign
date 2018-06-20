@@ -1,8 +1,8 @@
 /* Redesign - James E. Walker Library, MTSU. 2017 Amy York and Robert Spurlin
 Base CSS for all websites.
 ==============================================================================*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 #s-lg-public-skiplink {
   display: none !important;
 }
@@ -27,23 +27,24 @@ body {
 }
 
 .toplinks,
-.toplinks > li > a {
+.toplinks>li>a {
   font-size: 13.5px;
   color: rgb(51, 51, 51);
 }
+
 /* Animation of the hamburger menu when clicked */
 
-.navbar-toggle.collapsed > .icon-bar {
+.navbar-toggle.collapsed>.icon-bar {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.navbar-toggle.collapsed > .middle {
+.navbar-toggle.collapsed>.middle {
   -webkit-transform-origin: left;
   transform-origin: left;
 }
 
-.navbar-toggle.collapsed.onnav > .top {
+.navbar-toggle.collapsed.onnav>.top {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -52,12 +53,12 @@ body {
   -webkit-transform-origin: 10% 10%;
 }
 
-.navbar-toggle.collapsed.onnav > .middle {
+.navbar-toggle.collapsed.onnav>.middle {
   opacity: 0;
   width: 1px;
 }
 
-.navbar-toggle.collapsed.onnav > .bottom {
+.navbar-toggle.collapsed.onnav>.bottom {
   transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -66,18 +67,18 @@ body {
   -webkit-transform-origin: 10% 90%;
 }
 
-.navbar-toggle.collapsed.offnav > .top {
+.navbar-toggle.collapsed.offnav>.top {
   transform: rotate(0);
   -ms-transform: rotate(0);
   -webkit-transform: rotate(0);
 }
 
-.navbar-toggle.collapsed.offnav > .middle {
+.navbar-toggle.collapsed.offnav>.middle {
   opacity: 1;
   width: auto;
 }
 
-.navbar-toggle.collapsed.offnav > .bottom {
+.navbar-toggle.collapsed.offnav>.bottom {
   transform: rotate(0);
   -ms-transform: rotate(0);
   -webkit-transform: rotate(0);
@@ -93,13 +94,13 @@ body {
   color: white;
   text-align: center;
   font-weight: bold;
-  font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   text-decoration: none;
   display: inline-block;
 }
 
-.librarylink > h3,
-.librarylink > h3:hover {
+.librarylink>h3,
+.librarylink>h3:hover {
   color: #fff;
   margin: 0;
   width: fit-content;
@@ -125,6 +126,7 @@ h3.size {
 .navbar-menu .nav li {
   margin: 0 5px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 788px) {
   .navbar-menu .nav li {
     margin: 0 !important;
@@ -148,25 +150,26 @@ header.mtlibraryheader .dropdown-menu {
   margin-bottom: 2rem !important;
 }
 
-.navbar-center .open > a,
-.navbar-center .open > a:focus,
-.navbar-center .open > a:hover {
+.navbar-center .open>a,
+.navbar-center .open>a:focus,
+.navbar-center .open>a:hover {
   background: #3d87cf !important;
 }
+
 /* Helper classes for mobile */
+
 @media screen and (max-width: 767px) {
   .mobilehide {
     display: none !important;
   }
-
   .pb2m {
     padding-bottom: 2rem;
   }
-
   .mobileshow {
     display: block;
   }
 }
+
 @media screen and (min-width: 768px) {
   .mobileshow {
     display: none;
@@ -212,18 +215,18 @@ header.mtlibraryheader .dropdown-menu {
   width: calc(100% + 30px);
   margin-left: -15px;
 }
+
 /* Chat box */
+
 @media screen and (max-width: 767px) {
   .chat {
     width: 100%;
     bottom: -347px;
     left: 0;
   }
-
   .chat.open {
     bottom: 0;
   }
-
   .chatbutton {
     height: 43px;
     border-bottom: 0;
@@ -238,17 +241,16 @@ header.mtlibraryheader .dropdown-menu {
     border-color: #fff !important;
   }
 }
+
 @media screen and (min-width: 768px) {
   .chat {
     width: 400px;
     top: 300px;
     right: -400px;
   }
-
   .chat.open {
     right: 0;
   }
-
   .chatbutton {
     left: -64px;
     top: 15px;
@@ -256,7 +258,6 @@ header.mtlibraryheader .dropdown-menu {
     border-width: 0 4px 4px;
     padding: 10px;
   }
-
   .slideout {
     border-right: 0;
   }
@@ -305,32 +306,37 @@ header.mtlibraryheader .dropdown-menu {
   border: 2px solid #999;
   background-color: #f9f9f9;
 }
+
 @media screen and (min-width: 768px) {
   .slideout {
     min-height: 340px;
   }
 }
+
 /* Search box in header adjustments */
+
 @media screen and (min-width: 1247px) {
   #navbarmenu,
   .darkblue .padding {
     padding: 0 10rem;
   }
 }
+
 @media screen and (min-width: 1401px) {
   li.dropdown.mega-dropdown {
     position: relative !important;
   }
 }
+
 @media screen and (max-width: 1246px) and (min-width: 768px) {
   #navbarmenu {
     padding: 0 1.5rem;
   }
-
   header.mtlibraryheader .dropdown-menu {
     left: 5.1rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   #navbarmenu {
     display: flex !important;
@@ -340,12 +346,10 @@ header.mtlibraryheader .dropdown-menu {
     max-width: 1600px;
     margin: 0 auto;
   }
-
   #navbarmenu:after,
   #navbarmenu:before {
     display: none !important;
   }
-
   .navbar-menu .nav {
     display: inline-block;
   }
@@ -377,51 +381,51 @@ header.mtlibraryheader .dropdown-menu {
   border: 0;
   background: transparent !important;
 }
+
 @media screen and (min-width: 1076px) {
   header.mtlibraryheader .dropdown-menu {
     left: 0;
     margin: 0 auto;
     min-width: 799px;
   }
-
   header.mtlibraryheader .dropdown-menu.d-menu-right {
     right: 0;
     left: auto;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1075px) {
   #navbarmenu {
     flex-direction: column;
   }
-
   header.mtlibraryheader .dropdown-menu {
     min-width: 100%;
     left: 0 !important;
   }
-
   .searchbox {
     margin: 1rem 0;
   }
-
   .nav.navbar-nav:not(.toplinks),
   .searchbox {
     width: 100%;
   }
-
   .nav.navbar-nav:not(.toplinks) {
     order: 2;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 826px) {
-  li.dropdown > a {
+  li.dropdown>a {
     padding: 12px 10px !important;
   }
 }
+
 @media screen and (max-width: 767px) {
   .searchbox {
     margin-bottom: 2rem;
   }
 }
+
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
   .techfix {
     margin-left: -46rem !important;
@@ -429,6 +433,7 @@ header.mtlibraryheader .dropdown-menu {
     left: 0;
   }
 }
+
 @media screen and (max-width: 1400px) and (min-width: 768px) {
   header.mtlibraryheader .dropdown-menu {
     min-width: 100%;
@@ -484,25 +489,24 @@ header.mtlibraryheader .dropdown-menu {
   margin-right: 0;
   margin-left: 0;
 }
+
 @media screen and (max-width: 767px) {
   .hours-today {
     float: none !important;
   }
-
   .text-left-m {
     margin-top: 0.25rem;
   }
-
   .headerflex {
     justify-content: center !important;
     margin-top: 1rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .text-left-m {
     text-align: left;
   }
-
   .text-right-m {
     text-align: right;
   }
@@ -531,8 +535,8 @@ header.mtlibraryheader .dropdown-menu {
 #api_hours_today_iid907_lid2270 {
   display: inline-block;
 }
-// Contact Us
 
+// Contact Us
 table.department {
   td {
     padding-left: 5px;
@@ -540,24 +544,27 @@ table.department {
     padding-right: 10px;
   }
 }
+
 table.name {
   width: 100%;
-
   tr:nth-child(even) {
     background-color: #f5f0f0;
   }
 }
+
 table.liaisons {
   width: 100%;
   td {
     width: 50%;
   }
 }
+
 @media only screen and (max-width: 760px) {
   /* Force table to not be like tables anymore */
   table.department,
   table.liaisons,
-  table.name {
+  table.name,
+    {
     tbody,
     td,
     th,
@@ -572,11 +579,9 @@ table.liaisons {
       top: -9999px;
       left: -9999px;
     }
-
     tr {
       border: 1px solid #ccc;
     }
-
     td {
       /* Behave  like a "row" */
       border: none;
@@ -585,7 +590,6 @@ table.liaisons {
       margin-top: 20px;
       width: 100%;
     }
-
     td:before {
       /* Now like a table header */
       position: absolute;
@@ -597,56 +601,44 @@ table.liaisons {
       font-weight: 700;
     }
   }
-
   table.department {
     td:only-child {
       margin-top: 0;
-    }
-    // The actual labels
+    } // The actual labels
     td:nth-of-type(1):not(:only-child):before {
       content: "Room #";
     }
-
     td:nth-of-type(2):before {
       content: "Name";
     }
-
     td:nth-of-type(3):before {
       content: "Function";
     }
-
     td:nth-of-type(4):before {
       content: "Phone";
     }
-
     td:nth-of-type(5):before {
       content: "Email";
     }
   }
-
   table.name {
     td:nth-of-type(1):not(:only-child):before {
       content: "Name";
     }
-
     td:nth-of-type(2):before {
       content: "Department/Unit";
     }
-
     td:nth-of-type(3):before {
       content: "Phone";
     }
-
     td:nth-of-type(4):before {
       content: "Email";
     }
   }
-
   table.liaisons {
     td:nth-of-type(1):not(:only-child):before {
       content: "Department/Program";
     }
-
     td:nth-of-type(2):before {
       content: "Library Liaison";
     }
@@ -682,4 +674,18 @@ table.liaisons {
       border: 1px solid #0066CC;
     }
   }
+}
+
+.navbar-menu {
+  z-index: 100 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .text-center-m {
+    text-align: center;
+  }
+}
+
+.d-inline-block {
+  display: inline-block;
 }

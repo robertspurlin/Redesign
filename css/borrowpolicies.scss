@@ -1,0 +1,174 @@
+table:not(.hours-today):not(.footer-logos) {
+    td {
+        padding: 5px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    /* Force table to not be like tables anymore */
+    table:not(.hours-today):not(.footer-logos) {
+        display: block;
+
+        thead, tbody, th, td, tr {
+            display: block;
+        }
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        tr {
+            border: 1px solid #ccc;
+        }
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            margin-top: 20px;
+
+            li, li > a {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+        }
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: -20px;
+            left: 6px;
+            width: auto;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+        /*
+            Label the data
+            */
+        .gen:nth-of-type(1):before {
+            content: "Patron Type";
+            font-weight: bold
+        }
+        .gen:nth-of-type(2):before {
+            content: "Item Limit";
+            font-weight: bold
+        }
+        .gen:nth-of-type(3):before {
+            content: "Checkout Period";
+            font-weight: bold
+        }
+        .gen:nth-of-type(4):before {
+            content: "Renewals Allowed";
+            font-weight: bold
+        }
+        .gen:nth-of-type(5):before {
+            content: "Overdue Materials";
+            font-weight: bold
+        }
+        .spec:nth-of-type(1):before {
+            content: "Collection";
+            font-weight: bold
+        }
+        .spec:nth-of-type(2):before {
+            content: "Circulation Policy";
+            font-weight: bold
+        }
+        .spec:nth-of-type(3):before {
+            content: "Fines";
+            font-weight: bold
+        }
+        .audiobooks:nth-of-type(1):before {
+            content: "Patron Type";
+            font-weight: bold
+        }
+        .audiobooks:nth-of-type(2):before {
+            content: "Audiobooks";
+            font-weight: bold
+        }
+        .audiobooks:nth-of-type(3):before {
+            content: "Checkout Period";
+            font-weight: bold
+        }
+        .audiobooks:nth-of-type(4):before {
+            content: "Renewals Allowed";
+            font-weight: bold
+        }
+        .audiobooks:nth-of-type(5):before {
+            content: "Overdue Materials";
+            font-weight: bold
+        }
+        .dvd:nth-of-type(1):before {
+            content: "Patron Type";
+            font-weight: bold
+        }
+        .dvd:nth-of-type(2):before {
+            content: "DVDs and VHS";
+            font-weight: bold
+        }
+        .dvd:nth-of-type(3):before {
+            content: "Checkout Period";
+            font-weight: bold
+        }
+        .dvd:nth-of-type(4):before {
+            content: "Renewals Allowed";
+            font-weight: bold
+        }
+        .dvd:nth-of-type(5):before {
+            content: "Overdue Materials";
+            font-weight: bold
+        }
+        .scores:nth-of-type(1):before {
+            content: "Patron Type";
+            font-weight: bold
+        }
+        .scores:nth-of-type(2):before {
+            content: "Print Scores";
+            font-weight: bold
+        }
+        .scores:nth-of-type(3):before {
+            content: "Checkout Period";
+            font-weight: bold
+        }
+        .scores:nth-of-type(4):before {
+            content: "Renewals Allowed";
+            font-weight: bold
+        }
+        .scores:nth-of-type(5):before {
+            content: "Overdue Materials";
+            font-weight: bold
+        }
+        .recordings:nth-of-type(1):before {
+            content: "Patron Type";
+            font-weight: bold
+        }
+        .recordings:nth-of-type(2):before {
+            content: "A/V and Sound Recordings";
+            font-weight: bold
+        }
+        .recordings:nth-of-type(3):before {
+            content: "Checkout Period";
+            font-weight: bold
+        }
+        .recordings:nth-of-type(4):before {
+            content: "Renewals Allowed";
+            font-weight: bold
+        }
+        .recordings:nth-of-type(5):before {
+            content: "Overdue Materials";
+            font-weight: bold
+        }
+        .reserves:nth-of-type(1):before {
+            content: "Loan Type";
+            font-weight: bold
+        }
+        .reserves:nth-of-type(2):before {
+            content: "Restrictions";
+            font-weight: bold
+        }
+        .reserves:nth-of-type(3):before {
+            content: "Fine Rate";
+            font-weight: bold
+        }
+    }
+}
