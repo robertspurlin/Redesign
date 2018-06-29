@@ -11,15 +11,20 @@ CONTENTS:
 /* Floating Search Bar
 ==============================================================================*/
 
-#s-lg-box-15999343, #s-lg-box-18167313, #s-lg-box-18190481, #s-lg-box-18813369 {
+#s-lg-box-15999343,
+#s-lg-box-18167313,
+#s-lg-box-18190481,
+#s-lg-box-18813369 {
   background: transparent;
 }
 
-#s-lg-col-126, #s-lg-col-127 {
+#s-lg-col-126,
+#s-lg-col-127 {
   padding: 0;
 }
 
-#s-lg-box-15999343-container, #s-lg-box-18167313-container {
+#s-lg-box-15999343-container,
+#s-lg-box-18167313-container {
   padding: 0;
   margin-top: -1.05rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
@@ -31,27 +36,29 @@ CONTENTS:
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  box-pack: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  box-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  box-orient: vertical;
+  box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
 }
 
 @media screen and (max-width: 767px) {
-  #s-lg-box-15999343-container, #s-lg-box-18167313-container {
+  #s-lg-box-15999343-container,
+  #s-lg-box-18167313-container {
     background-attachment: scroll;
-  }
-  .tab-content {
-    max-height: 200px !important;
-  }
-  .nav-justified>li {
-    width: 33%;
-    float: left !important;
   }
   .s-lg-form-control {
     margin-right: 12px;
@@ -62,15 +69,9 @@ CONTENTS:
     margin-bottom: 2rem !important;
     padding-bottom: 1.5rem !important;
   }
-
   .col-sm-4.trigger.child {
     margin-top: 2rem;
   }
-}
-
-.tab-content {
-  overflow: hidden;
-  max-height: 185px;
 }
 
 .transparent-box {
@@ -107,10 +108,14 @@ CONTENTS:
   text-align: center;
 }
 
-
 /* Quick Links
 ==============================================================================*/
-#reserverooms>.row, #howdoi>.row {
+
+#reserverooms>.row,
+#hours>.row,
+#coursereserves>.row,
+#howdoi>.row,
+  {
   padding-top: 2rem;
   padding-bottom: 4rem;
   margin-right: 0;
@@ -119,7 +124,10 @@ CONTENTS:
   border-bottom: 1px solid #555555;
 }
 
-#reserverooms, #hours, #coursereserves, #howdoi {
+#reserverooms,
+#hours,
+#coursereserves,
+#howdoi {
   display: none;
 }
 
@@ -128,7 +136,6 @@ CONTENTS:
   width: 50%;
 }
 
-
 /* Other
 ==============================================================================*/
 
@@ -136,8 +143,13 @@ CONTENTS:
   padding: 0;
 }
 
-#s-lg-box-16162454 {
-  background: red;
+/* V1 */
+
+#s-lg-box-16162454,
+/* V2 */
+
+#s-lg-box-19263081 {
+  background: rgb(255, 0, 0);
   color: #ffffff;
   font-weight: bold;
   text-align: center;
@@ -145,7 +157,8 @@ CONTENTS:
   margin-bottom: 0;
 }
 
-#s-lg-box-16162454 p {
+#s-lg-box-16162454 p,
+#s-lg-box-19263081 p {
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 5px 0;
@@ -165,16 +178,15 @@ CONTENTS:
 }
 
 @media screen and (max-width: 767px) {
-  #s-lg-box-15999343, #s-lg-box-18167313 {
+  #s-lg-box-15999343,
+  #s-lg-box-18167313 {
     margin: 0;
   }
-
   .homev1 {
     border-radius: 0 !important;
     min-height: 400px;
   }
 }
-
 
 #s-lg-box-16302937 {
   margin-bottom: -1.1rem;
@@ -196,13 +208,28 @@ CONTENTS:
   border-radius: 100%;
   height: 100px;
   width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  box-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  box-orient: vertical;
+  box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 2rem auto;
 }
 
 .iconhvr i {
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -220,7 +247,9 @@ CONTENTS:
   opacity: 1;
 }
 
-.iconhvr:hover, .iconhvr:focus, .iconhvr:active {
+.iconhvr:hover,
+.iconhvr:focus,
+.iconhvr:active {
   text-decoration: none;
 }
 
@@ -244,7 +273,8 @@ CONTENTS:
   padding: 1.5rem;
 }
 
-#s-lg-box-16711577-container, #s-lg-box-18167312-container {
+#s-lg-box-16711577-container,
+#s-lg-box-18167312-container {
   margin: -1.1rem 0 -2.1rem 0;
 }
 
@@ -272,24 +302,39 @@ CONTENTS:
   margin-right: 0.5em;
 }
 
-
 /* Parallax on bottom of page. First ID is for version 2, 2nd is for version 1 */
-#s-lg-box-18190481-container, #s-lg-box-18813369-container {
-  background:
-  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
+
+#s-lg-box-18190481-container,
+#s-lg-box-18813369-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  box-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  box-orient: vertical;
+  box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  #s-lg-box-18167310, #s-lg-box-18167309 {
+  #s-lg-box-18167310,
+  #s-lg-box-18167309 {
     margin: 5rem 0;
   }
 }
@@ -303,6 +348,11 @@ CONTENTS:
 }
 
 .justify-content-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
