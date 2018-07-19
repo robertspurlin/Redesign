@@ -10,7 +10,7 @@
 // For use of let and const on older browsers that do not support ES6
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   // Alert system for MTSU.
   const feed = "https://www.getrave.com/rss/mtsu/channel1";
@@ -19,9 +19,9 @@ $(document).ready(function() {
       xml: "application/rss+xml"
     },
     dataType: "xml",
-    success: function(data) {
+    success: function (data) {
       let xmlCount = 0;
-      $(data).find('item').each(function() {
+      $(data).find('item').each(function () {
         if (!xmlCount) {
           xmlCount++;
           const alertText = $(this).find('description').text();
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   // ITD Header.
   let searchvisible = 0;
-  $("#search-menu").click(function(e) {
+  $("#search-menu").click(function (e) {
     //This stops the page scrolling to the top on a # link.
     e.preventDefault();
     if (searchvisible === 0) {
@@ -51,33 +51,38 @@ $(document).ready(function() {
   });
 
   // Button animation trigger
-  $('body').on('click', '.navbar-toggle.collapsed', function() {
+  $('body').on('click', '.navbar-toggle.collapsed', function () {
     $('.navbar-toggle').toggleClass('offnav onnav');
   });
 
   // Home page slider on featured buttons function
 
-  $('.roomtrigger').click(function(e) {
+  const hours = document.getElementById('hours');
+  const coursereserves = document.getElementById('coursereserves');
+  const howdoi = document.getElementById('howdoi');
+  const reserverooms = document.getElementById('reserverooms');
+
+  $('.roomtrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+    if (hours && hours.style.display === 'block') {
       $('#hours').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#reserverooms').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+    } else if (coursereserves && coursereserves.style.display === 'block') {
       $('#coursereserves').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#reserverooms').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+    } else if (howdoi && howdoi.style.display === 'block') {
       $('#howdoi').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#reserverooms').slideToggle('fast')
       }, 300);
 
@@ -86,27 +91,27 @@ $(document).ready(function() {
     }
   });
 
-  $('.hourtrigger').click(function(e) {
+  $('.hourtrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+    if (reserverooms && reserverooms.style.display === 'block') {
       $('#reserverooms').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#hours').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+    } else if (coursereserves && coursereserves.style.display === 'block') {
       $('#coursereserves').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#hours').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+    } else if (howdoi && howdoi.style.display === 'block') {
       $('#howdoi').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#hours').slideToggle('fast')
       }, 300);
 
@@ -115,27 +120,27 @@ $(document).ready(function() {
     }
   });
 
-  $('.coursetrigger').click(function(e) {
+  $('.coursetrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+    if (reserverooms && reserverooms.style.display === 'block') {
       $('#reserverooms').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#coursereserves').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+    } else if (hours && hours.style.display === 'block') {
       $('#hours').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#coursereserves').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('howdoi') && document.getElementById('howdoi').style.display === 'block') {
+    } else if (howdoi && howdoi.style.display === 'block') {
       $('#howdoi').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#coursereserves').slideToggle('fast')
       }, 300);
 
@@ -144,27 +149,27 @@ $(document).ready(function() {
     }
   });
 
-  $('.howdoitrigger').click(function(e) {
+  $('.howdoitrigger').click(function (e) {
     e.preventDefault();
 
-    if (document.getElementById('reserverooms') && document.getElementById('reserverooms').style.display === 'block') {
+    if (reserverooms && reserverooms.style.display === 'block') {
       $('#reserverooms').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#howdoi').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('hours') && document.getElementById('hours').style.display === 'block') {
+    } else if (hours && hours.style.display === 'block') {
       $('#hours').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#howdoi').slideToggle('fast')
       }, 300);
 
-    } else if (document.getElementById('coursereserves') && document.getElementById('coursereserves').style.display === 'block') {
+    } else if (coursereserves && coursereserves.style.display === 'block') {
       $('#coursereserves').slideUp('fast');
 
-      setTimeout(function() {
+      setTimeout(function () {
         $('#howdoi').slideToggle('fast')
       }, 300);
 
@@ -177,13 +182,70 @@ $(document).ready(function() {
     "height": $('.parent').height()
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     $(".child").css({
       "height": $('.parent').height()
     });
   });
 
-  $('.chat').click(function() {
+  $('.chat').click(function () {
     $(this).toggleClass('open');
+  });
+
+  // Scroll change. To make the logo smaller on scroll and back.
+
+  // First, need to add padding to the body so nothing is broken... 
+
+  $('body').css({
+    'padding-top': $('#header').height()
+  });
+
+  // Now let's do the shrinking. 
+  let logoHasShrinked = false;
+  const logo = document.getElementById('mtsulogo');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 100 && !logoHasShrinked) {
+
+      $(logo).css({
+        'max-height': '55px'
+      });
+
+      $('.darkblue').css({
+        'padding': '0.4rem 0'
+      });
+
+      $('.bluebox').css({
+        'opacity': 0,
+        'max-height': 0
+      });
+
+      $('.bluebox .toplinks').css({
+        'max-height': '20px'
+      });
+
+      logoHasShrinked = true;
+
+    } else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight || window.scrollY <= 100) {
+
+      $(logo).css({
+        'max-height': '90px'
+      });
+
+      $('.darkblue').css({
+        'padding': '0.7rem 0'
+      });
+
+      $('.bluebox').css({
+        'opacity': 1,
+        'max-height': 'inherit'
+      });
+
+      $('.bluebox .toplinks').css({
+        'max-height': '51px'
+      });
+
+      logoHasShrinked = false;
+    }
   });
 });

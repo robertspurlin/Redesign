@@ -26,7 +26,6 @@ CONTENTS:
 #s-lg-box-15999343-container,
 #s-lg-box-18167313-container {
   padding: 0;
-  margin-top: -1.05rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
   min-height: 325px;
@@ -292,7 +291,7 @@ CONTENTS:
 }
 
 #s-lg-guide-main {
-  padding-bottom: 0;
+  padding: 0;
 }
 
 /* Version 2 libraryguides.mtsu.edu/newsite_v2

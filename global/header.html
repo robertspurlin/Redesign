@@ -1,4 +1,4 @@
-<header class="mtlibraryheader">
+<header class="mtlibraryheader sticky" id='header'>
   <div class="Alert"></div>
   <div class="row bluebox">
     <nav class="navbar navbar-top">
@@ -36,28 +36,28 @@
   <div class="row navbar-top">
     <div class="searcharea">
       <div id="search-form" class="search-form">
-				<form action="https://www.mtsu.edu/search.php" method="get">
-					<input type="hidden" name="dropXSL" value="">
-					<input type="hidden" name="pr" value="allmtsu">
-					<input type="hidden" name="prox" value="page">
-					<input type="hidden" name="rorder" value="750">
-					<input type="hidden" name="rprox" value="500">
-					<input type="hidden" name="rdfreq" value="500">
-					<input type="hidden" name="rwfreq" value="500">
-					<input type="hidden" name="rlead" value="750">
-					<input type="hidden" name="sufs" value="0">
-					<input type="hidden" name="order" value="r">
-					<input type="hidden" name="rdepth" value="125">
-					<input aria-label="Search Box" id="search" placeholder="Search..." title="Search Box" type="text" name="query" value="">
-				</form>
-			</div>
+        <form action="https://www.mtsu.edu/search.php" method="get">
+          <input type="hidden" name="dropXSL" value="">
+          <input type="hidden" name="pr" value="allmtsu">
+          <input type="hidden" name="prox" value="page">
+          <input type="hidden" name="rorder" value="750">
+          <input type="hidden" name="rprox" value="500">
+          <input type="hidden" name="rdfreq" value="500">
+          <input type="hidden" name="rwfreq" value="500">
+          <input type="hidden" name="rlead" value="750">
+          <input type="hidden" name="sufs" value="0">
+          <input type="hidden" name="order" value="r">
+          <input type="hidden" name="rdepth" value="125">
+          <input aria-label="Search Box" id="search" placeholder="Search..." title="Search Box" type="text" name="query" value="">
+        </form>
+      </div>
     </div>
   </div>
   <div class="row">
     <div class="jumbotron logo" style='padding: 15px 0 10px 0;'>
       <a href="https://www.mtsu.edu">
         <img src="https://libapps.s3.amazonaws.com/accounts/123588/images/MTSU-Wordmark-White.png" alt="Middle Tennessee State University"
-          style='max-height: 80px;'>
+          id='mtsulogo'>
       </a>
       <div class="row marginfix text-center darkblue">
         <div class="padding">
@@ -95,10 +95,13 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Find Resources</a>
             <ul class="dropdown-menu mega-dropdown-menu" role="menu">
               <div class="col-sm-12">
-                <h4 class="title">Find Resources</h4>
+                <h3 class="title">Find Resources</h3>
               </div>
               <div class="col-sm-4">
                 <ul class="list_unstyled">
+                  <li style='border-bottom: 1px solid #000'>
+                    <b>Search Tools</b>
+                  </li>
                   <li>
                     <a href="http://search.ebscohost.com/login.aspx?direct=true&scope=site&site=eds-live&authtype=ip%2Cguest&custid=s4672406&groupid=main&profile=eds&bquery="
                       target="_blank">JEWLSearch (books, articles, media &amp; more)</a>
@@ -110,54 +113,57 @@
                     <a href="https://find.mtsu.edu/vufind/Search/Reserves" target="_blank">Course Reserves</a>
                   </li>
                   <li>
-                    <a href="/curriculum">Curriculum Collection</a>
-                  </li>
-                  <li>
                     <a href="/databasesaz">Databases A-Z</a>
-                  </li>
-
-                </ul>
-              </div>
-              <div class="col-sm-4">
-                <ul class="list_unstyled">
-                  <li>
-                    <a href="http://dsi.mtsu.edu/collections" target="_blank">Digital Collections</a>
-                  </li>
-                  <li>
-                    <a href="/dissertations">Dissertations &amp; Theses</a>
                   </li>
                   <li>
                     <a href="http://qq5td7he6s.search.serialssolutions.com/?L=QQ5TD7HE6S&amp;tab=JOURNALS" target="_blank">e-Journals</a>
                   </li>
                   <li>
-                    <a href="/govinfo">Government Documents</a>
+                    <a href="https://libraryguides.mtsu.edu/">Resources by Subject (Research Guides)</a>
                   </li>
-                  <li>
-                    <a href="http://jewlscholar.mtsu.edu/" target="_blank">JEWL Scholar: Institutional Repository</a>
-                  </li>
-
                 </ul>
               </div>
               <div class="col-sm-4">
                 <ul class="list_unstyled">
+                  <li style='border-bottom: 1px solid #000'>
+                    <b>Collections and Formats</b>
+                  </li>
+                  <li>
+                    <a href="/curriculum">Curriculum Collection</a>
+                  </li>
+                  <li>
+                    <a href="http://dsi.mtsu.edu/collections" target="_blank">Digital Collections</a>
+                  </li>
+                  <li>
+                    <a href="http://jewlscholar.mtsu.edu/" target="_blank">JEWL Scholar: Institutional Repository</a>
+                  </li>
                   <li>
                     <a href="/mediaresources">Media Collection</a>
                   </li>
                   <li>
-                    <a href="/microtext">Microtext</a>
-                  </li>
-
-                  <li>
                     <a href="/music">Music Collection</a>
                   </li>
                   <li>
-                    <a href="/newspapers">Newspapers</a>
-                  </li>
-                  <li>
-                    <a href="https://libraryguides.mtsu.edu/">Resources by Subject (Research Guides)</a>
-                  </li>
-                  <li>
                     <a href="/specialcollections">Special Collections</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 ">
+                <ul class="list_unstyled">
+                  <li style='border-bottom: 1px solid #000'>
+                    <b>By Material Type</b>
+                  </li>
+                  <li>
+                    <a href="/dissertations">Dissertations &amp; Theses</a>
+                  </li>
+                  <li>
+                    <a href="/govinfo">Government Documents</a>
+                  </li>
+                  <li>
+                    <a href="/microtext">Microform</a>
+                  </li>
+                  <li>
+                    <a href="/newspapers">Newspapers</a>
                   </li>
                 </ul>
               </div>
@@ -168,60 +174,68 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Library Services</a>
             <ul class="dropdown-menu mega-dropdown-menu" role="menu">
               <div class="col-sm-12">
-                <h4 class="title">Library Services</h4>
+                <h3 class="title">Library Services</h3>
               </div>
-              <div class="col-sm-4">
-                <ul class="list_unstyled">
-                  <li>
-                    <a href="/borrow">Borrow & Renew </a>
-                  </li>
-                  <li>
-                    <a href="/ill">Interlibrary Loan (for items not owned by MTSU)</a>
-                  </li>
-                  <li>
-                    <a href="/instruction">Instructional Services</a>
-                  </li>
-                  <li>
-                    <a href="/forms">Library Request Forms</a>
-                  </li>
 
-                </ul>
-              </div>
-              <div class="col-sm-4">
+              <div class="col-sm-8 col-xs-12 nopad">
                 <ul class="list_unstyled">
-                  <li>
-                    <a href="/borrow/accounts">My Library Accounts</a>
-                  </li>
-                  <li>
-                    <a href="/reserves">Place Items on Course Reserve</a>
-                  </li>
-                  <li>
-                    <a href="/forms/purchase">Request a Purchase</a>
-                  </li>
-                  <li>
-                    <a href="/spaces">Study & Meeting Spaces</a>
-                  </li>
-                  <li>
-                    <a href="/technology">Technology Services</a>
+                  <li style='border-bottom: 1px solid #000' class='superheader'>
+                    <b>Borrow, Request, Renew</b>
                   </li>
                 </ul>
+                <div class="col-sm-6">
+                  <ul class="list_unstyled">
+                    <li>
+                      <a href="/borrow">Borrow & Renew</a>
+                    </li>
+                    <li>
+                      <a href="/ill">Interlibrary Loan (for items not owned by MTSU)</a>
+                    </li>
+                    <li>
+                      <a href="/instruction">Instructional Services</a>
+                    </li>
+                    <li>
+                      <a href="/forms">Library Request Forms</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list_unstyled">
+                    <li>
+                      <a href="/borrow/accounts">My Library Accounts</a>
+                    </li>
+                    <li>
+                      <a href="/reserves">Place Items on Course Reserve</a>
+                    </li>
+                    <li>
+                      <a href="/forms/purchase">Request a Purchase</a>
+                    </li>
+                    <li>
+                      <a href="/spaces">Study & Meeting Spaces</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
               <div class="col-sm-4">
                 <ul class="list_unstyled">
-                  <li>
-                    <a href="/dl">Distance Learning Services</a>
+                  <li style='border-bottom: 1px solid #000'>
+                    <b>Services for</b>
                   </li>
                   <li>
-                    <a href="/services/faculty">Faculty/Instructor Services</a>
+                    <a href="/dl">Distance Learners</a>
                   </li>
                   <li>
-                    <a href="/services/gradstudents">Graduate Student Services</a>
+                    <a href="/services/faculty">Faculty/Instructors</a>
                   </li>
                   <li>
-                    <a href="/services/accessibility">Services for Users with Disabilities</a>
+                    <a href="/services/gradstudents">Graduate Students</a>
                   </li>
                   <li>
-                    <a href="/services/visitors">Alumni &amp; Visitor Services</a>
+                    <a href="/services/accessibility">Users with Disabilities</a>
+                  </li>
+                  <li>
+                    <a href="/services/visitors">Alumni &amp; Visitors</a>
                   </li>
                 </ul>
               </div>
@@ -232,45 +246,47 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Help</a>
             <ul class="dropdown-menu mega-dropdown-menu" role="menu">
               <div class="col-sm-12">
-                <h4 class="title">Get Help</h4>
+                <h3 class="title">Get Help</h3>
               </div>
-              <div class="col-sm-4">
-                <ul class="list_unstyled">
-                  <li>
-                    <a href="http://libanswers.mtsu.edu">Ask Us (FAQ, Chat, Email)</a>
-                  </li>
-                  <li>
-                    <a href="/help/callnumbers">Call Numbers</a>
-                  </li>
-                  <li>
-                    <a href="/citations">Citation Help</a>
-                  </li>
-                  <li>
-                    <a href="/help/tutorials">Tutorials</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-4">
-                <ul class="list_unstyled">
-                  <li>
-                    <a href="/instruction">Instructional Services</a>
-                  </li>
-                  <li>
-                    <a href="/cat.php?cid=54358">Research Guides by Course</a>
-                  </li>
-                  <li>
-                    <a href="/?b=s">Research Guides by Subject</a>
-                  </li>
-                  <li>
-                    <a href="/about/liaisons">Subject Librarians</li>
 
+              <div class="col-sm-8 col-xs-12 nopad">
+                <ul class="list_unstyled">
+                  <li style='border-bottom: 1px solid #000' class='superheader'>
+                    <b>Library Help</b>
+                  </li>
                 </ul>
+                <div class="col-sm-6">
+                  <ul class="list_unstyled">
+                    <li>
+                      <a href="http://libanswers.mtsu.edu">Ask Us (FAQ, Chat, Email)</a>
+                    </li>
+                    <li>
+                      <a href="/help/callnumbers">Call Numbers</a>
+                    </li>
+                    <li>
+                      <a href="/citations">Citation Help</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list_unstyled">
+                    <li>
+                      <a href="/cat.php?cid=54358">Research Guides by Course</a>
+                    </li>
+                    <li>
+                      <a href="/?b=s">Research Guides by Subject</a>
+                    </li>
+                    <li>
+                      <a href="/about/liaisons">Subject Librarians</a>
+                    </li>
+                    <li>
+                      <a href="/technology">Technology Help</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="col-sm-4">
                 <ul class="list_unstyled">
-                  <li>
-                    <a href="/technology">Technology Help</a>
-                  </li>
                   <li style='border-bottom: 1px solid #000'>
                     <b>Other University Services</b>
                   </li>
@@ -279,7 +295,6 @@
                   </li>
                   <li>
                     <a href="https://www.mtsu.edu/studentsuccess/tutoring.php">Tutoring Center</a>
-                    </span>
                   </li>
                   <li>
                     <a href="https://www.mtsu.edu/uwc">University Writing Center</a>
@@ -292,17 +307,16 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Technology</a>
             <ul class="dropdown-menu mega-dropdown-menu techfix" role="menu">
               <div class="col-sm-12">
-                <h4 class="title">Technology in the Library</h4>
+                <h3 class="title">Technology in the Library</h3>
               </div>
               <div class="col-sm-4">
                 <ul class="list_unstyled">
                   <li>
-                    <a href="/technology">Technology Services </a>
+                    <a href="/technology">Technology Services</a>
                   </li>
                   <li>
                     <a href="/technology/equipment">Borrow Equipment</a>
                   </li>
-
                   <li>
                     <a href="/technology/3dprinter">3D Printing</a>
                   </li>
@@ -311,7 +325,7 @@
               <div class="col-sm-4">
                 <ul class="list_unstyled">
                   <li>
-                    <a href="/technology/makerspace">Makerspace</a>
+                    <a href="/technology/makerspace">MakerSpace</a>
                   </li>
                   <li>
                     <a href="/technology/printing">Print/Scan/Copy/Fax</a>
@@ -341,7 +355,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us</a>
             <ul class="dropdown-menu mega-dropdown-menu d-menu-right" role="menu">
               <div class="col-sm-12">
-                <h4 class="title">About Us</h4>
+                <h3 class="title">About Us</h3>
               </div>
               <div class="col-sm-4">
                 <ul class="list_unstyled">
@@ -349,43 +363,41 @@
                     <a href="/about">Welcome to the Library</a>
                   </li>
                   <li>
-                    <a href="/about/hours">Hours</a>
+                    <a href="http://dsi.mtsu.edu">Digital Scholarship Initiatives</a>
                   </li>
                   <li>
-                    <a href="/about/contact">Contact Us</a>
+                    <a href="/about/hours">Hours & Events</a>
                   </li>
-
                 </ul>
               </div>
               <!-- end col-4 -->
               <div class="col-sm-4">
                 <ul class="list_unstyled">
                   <li>
-                    <a href="/about/floorplans">Floor Maps &amp; Building Directory</a>
+                    <a href="/about/contact">Staff Directory</a>
                   </li>
                   <li>
-                    <a href="/about/policies">Policies &amp; Procedures</a>
+                    <a href="/about/floorplans">Library Floor Plans</a>
                   </li>
-
                   <li>
-                    <a href="http://dsi.mtsu.edu">Digital Scholarship Initiatives</a>
+                    <a href="/about/facts">Library Facts &amp; History</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end col-4 -->
+              <div class="col-sm-4">
+                <ul class="list_unstyled">
+                  <li>
+                    <a href="/about/jobs">Library Jobs</a>
                   </li>
                   <li>
                     <a href="/about/suggestions">Make a Suggestion</a>
                   </li>
-                </ul>
-              </div>
-              <!-- end col-4 -->
-              <div class="col-sm-4">
-                <ul class="list_unstyled">
                   <li>
-                    <a href="/about/facts">Library Facts &amp; History</a>
+                    <a href="/about/policies">Policies &amp; Procedures</a>
                   </li>
                   <li>
                     <a href="/about/support">Support the Library</a>
-                  </li>
-                  <li class="last">
-                    <a href="/about/jobs">Library Jobs</a>
                   </li>
                 </ul>
               </div>
@@ -395,9 +407,9 @@
         </ul>
         <div class="searchbox">
           <script>
-            springshare_widget_config_1519408920922 = {};
+            springshare_widget_config_1530289621211 = {};
           </script>
-          <div id="s-lg-widget-1519408920922"></div>
+          <div id="s-lg-widget-1530289621211"></div>
           <script>
             ! function (d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0],
@@ -406,18 +418,18 @@
                 js = d.createElement(s);
                 js.id = id;
                 js.src = p +
-                  "://lgapi-us.libapps.com/widgets.php?site_id=1484&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&group_id=0&placeholder_text=Search+Library+Site...&button_text=%3Ci+class%3D%22fa+fa-search%22%3E%3C%2Fi%3E&widget_height=&widget_width=225&config_id=1519408920922";
+                  "://lgapi-us.libapps.com/widgets.php?site_id=1484&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&group_id=12907&placeholder_text=Search+Library+Site...&button_text=%3Cspan+class%3D%27sr-only%27%3ESearch%3C%2Fspan%3E%3Ci+class%3D%22fa+fa-search%22%3E%3C%2Fi%3E&widget_height=&widget_width=225&config_id=1530289621211";
                 fjs.parentNode.insertBefore(js, fjs);
               }
-            }(document, "script", "s-lg-widget-script-1519408920922");
+            }(document, "script", "s-lg-widget-script-1530289621211");
           </script>
         </div>
       </div>
     </nav>
   </div>
-
   <div class="chat">
-    <a href="javascript:void(0);" onclick="return false;" class="chatbutton">Ask Us!</a>
+    <a href="javascript:void(0);" onclick="return false;" class="chatbutton" role='button'>Ask Us!</a>
+    <span class="sr-only">Toggle Chat Widget</span>
     <div class="slideout">
       <div id='gethelp'>
         <iframe id="iframe_b510d405041315e3b8fdb5d7ebe9914c" name="iframe_b510d405041315e3b8fdb5d7ebe9914c" style="background: transparent; color: white;"
