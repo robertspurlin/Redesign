@@ -192,7 +192,7 @@ CONTENTS:
 }
 
 .homev1 {
-  background: rgba(230, 230, 230, 0.8);
+  background: rgba(230, 230, 230, 0.9);
   padding: 1.5rem;
   border-radius: 10px;
 }
@@ -305,8 +305,8 @@ CONTENTS:
 
 #s-lg-box-18190481-container,
 #s-lg-box-18813369-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -354,4 +354,8 @@ CONTENTS:
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.s-la-widget .s-la-faq-listing-meta .divider {
+  color: #000 !important;
 }

@@ -6,6 +6,11 @@ Base CSS for all websites.
   background: transparent;
   color: #fff; }
 
+a {
+  color: #0066CC;
+  text-transform: underline;
+  font-weight: 700; }
+
 *:active,
 *:focus,
 *:hover {
@@ -25,7 +30,8 @@ body {
 .toplinks,
 .toplinks > li > a {
   font-size: 14.4px;
-  color: #242424; }
+  color: #242424;
+  font-weight: 400; }
 
 /* Animation of the hamburger menu when clicked */
 .navbar-toggle.collapsed > .icon-bar {
@@ -365,7 +371,8 @@ header.mtlibraryheader .dropdown-menu {
   header.mtlibraryheader .dropdown-menu {
     top: 5rem; }
 
-  .bluebox, .toplinks {
+  .bluebox,
+  .toplinks {
     transition: all 0.3s; } }
 @media screen and (min-width: 827px) and (max-width: 1025px) {
   header.mtlibraryheader .dropdown-menu {
@@ -431,7 +438,7 @@ header.mtlibraryheader .dropdown-menu {
   background: transparent !important; }
 
 @media screen and (min-width: 768px) and (max-width: 826px) {
-  li.dropdown > a {
+  header li.dropdown > a {
     padding: 12px 10px !important; } }
 @media screen and (max-width: 767px) {
   .searchbox {
@@ -696,5 +703,21 @@ table.liaisons {
 
 .nopad {
   padding: 0; }
+
+.s-lib-box-title {
+  color: #000 !important;
+  background-color: #eee !important;
+  border-bottom: 1px solid #888 !important; }
+
+.s-lib-box {
+  border-color: #888 !important; }
+
+#s-lg-tabs-container .nav-pills > li a {
+  background-color: #1e6dbc !important;
+  transition: all 0.3s; }
+  #s-lg-tabs-container .nav-pills > li a.active, #s-lg-tabs-container .nav-pills > li a:hover {
+    background-color: #113e87 !important; }
+#s-lg-tabs-container .nav-pills > li li.active a {
+  background-color: #113e87 !important; }
 
 /*# sourceMappingURL=librarybase.css.map */
