@@ -24,6 +24,7 @@ a:hover {
 .navbar-top,
 body {
   font-size: 15px;
+  line-height: 1.75;
   font-family: 'Nunito Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased; }
 
@@ -367,7 +368,8 @@ header.mtlibraryheader .dropdown-menu {
     padding-top: 0 !important; } }
 .list_unstyled li {
   margin: 0 auto 15px auto !important;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 28px; }
   .list_unstyled li:not(.superheader) {
     max-width: 350px; }
   .list_unstyled li.superheader {
@@ -426,7 +428,9 @@ header.mtlibraryheader .dropdown-menu {
   .searchbox {
     margin-bottom: 2rem; } }
 #s-lg-guide-name {
-  display: none; }
+  font-size: 25px !important;
+  margin-top: 1rem !important;
+  font-weight: 700; }
 
 .darkblue {
   padding: 0.7rem 0;
@@ -702,9 +706,9 @@ table.liaisons {
 #s-lg-tabs-container .nav-pills > li li.active a {
   background-color: #113e87 !important; }
 
-#s-lg-guide-tabs {
+#s-lg-guide-tabs:not(.tabs) {
   /* Make children of pill nav always show */ }
-  #s-lg-guide-tabs .dropdown-menu {
+  #s-lg-guide-tabs:not(.tabs) .dropdown-menu {
     position: relative;
     display: block;
     left: 0;
@@ -715,7 +719,7 @@ table.liaisons {
     z-index: 1;
     border: 0;
     padding: 0; }
-    #s-lg-guide-tabs .dropdown-menu a {
+    #s-lg-guide-tabs:not(.tabs) .dropdown-menu a {
       white-space: unset;
       border: 1px solid transparent;
       border-radius: 4px;
@@ -724,9 +728,16 @@ table.liaisons {
       padding: 4px 15px;
       line-height: 1.75;
       margin-top: 2px; }
-    #s-lg-guide-tabs .dropdown-menu li:first-child a {
+    #s-lg-guide-tabs:not(.tabs) .dropdown-menu li:first-child a {
       margin-top: 0; }
-  #s-lg-guide-tabs .dropdown-toggle {
+  #s-lg-guide-tabs:not(.tabs) .dropdown-toggle {
     display: none !important; }
+
+#s-lg-guide-tabs .nav-tabs > li {
+  height: auto; }
+
+#s-lib-scroll-top {
+  display: none !important;
+  opacity: 0 !important; }
 
 /*# sourceMappingURL=librarybase.css.map */

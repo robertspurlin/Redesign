@@ -29,6 +29,7 @@ a:hover {
 .navbar-top,
 body {
   font-size: 15px;
+  line-height: 1.75;
   font-family: 'Nunito Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
@@ -475,6 +476,7 @@ header.mtlibraryheader .dropdown-menu {
   }
   margin: 0 auto 15px auto !important;
   font-size: 16px;
+  line-height: 28px;
 }
 
 // A11y: Change hovers of buttons: more contrast. 
@@ -546,7 +548,9 @@ header.mtlibraryheader .dropdown-menu {
 }
 
 #s-lg-guide-name {
-  display: none;
+  font-size: 25px !important;
+  margin-top: 1rem !important;
+  font-weight: 700;
 }
 
 .darkblue {
@@ -896,7 +900,7 @@ table.liaisons {
   }
 }
 
-#s-lg-guide-tabs {
+#s-lg-guide-tabs:not(.tabs) {
   /* Make children of pill nav always show */
   .dropdown-menu {
     position: relative;
@@ -926,4 +930,13 @@ table.liaisons {
   .dropdown-toggle {
     display: none !important;
   }
+}
+
+#s-lg-guide-tabs .nav-tabs>li {
+  height: auto;
+}
+
+#s-lib-scroll-top {
+  display: none !important;
+  opacity: 0 !important;
 }
