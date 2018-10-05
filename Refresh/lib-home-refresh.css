@@ -1,0 +1,398 @@
+/* Redesign - James E. Walker Library, MTSU. 2017 Amy York and Robert Spurlin
+Style arguments for the home page.
+================================================================================
+
+CONTENTS:
+
+1. Floating search bar with background image, home page
+2. Other/Unclassified
+3. Version 2 Specifics (//libraryguides.mtsu.edu/newsite_v2)
+
+/* Floating Search Bar
+==============================================================================*/
+
+#s-lg-box-20036077,
+#s-lg-box-20036079 {
+    background: transparent;
+}
+
+#s-lib-bc {
+    display: none;
+}
+
+#s-lg-guide-tabs-title-bar {
+    border-top: 0px solid #000;
+}
+
+body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
+.row,
+#s-lg-box-20036078, #s-lg-box-20036077 {
+    margin: 0 !important;
+}
+
+#s-lg-col-126,
+#s-lg-col-127 {
+    padding: 0;
+}
+
+#s-lg-box-20036077-container {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://libapps.s3.amazonaws.com/accounts/123588/images/DSC_4753_low_res.jpg);
+    min-height: 325px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    box-orient: vertical;
+    box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 1079px) {
+    #s-lg-box-20036077-container {
+        min-height: 475px;
+        padding: 134px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #s-lg-box-20036077-container,
+    #s-lg-box-20036079-container {
+        background-attachment: scroll;
+    }
+
+    .s-lg-form-control {
+        margin-right: 12px;
+    }
+
+    .stats .col-sm-4 {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 2rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .col-sm-4.trigger.child {
+        margin-top: 2rem;
+    }
+}
+
+.transparent-box {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 490px) {
+    .s-lg-form-control:not(#s-lg-guide-search) {
+        width: 100% !important;
+    }
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-radius: 0 !important;
+    color: #ffffff;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.nav-tabs.nav-justified>li>a:hover {
+    color: black;
+    background: #ffffff;
+}
+
+.nav-tabs.nav-justified>li.active>a {
+    color: black;
+}
+
+.input-group {
+    max-width: 700px;
+}
+
+.search-box {
+    text-align: center;
+}
+
+/* Quick Links
+  ==============================================================================*/
+
+#reserverooms .row.marginfix,
+#hours .row.marginfix,
+#coursereserves .row.marginfix,
+#howdoi .row.marginfix {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 1px solid #555555;
+}
+
+#reserverooms,
+#hours,
+#coursereserves,
+#howdoi {
+    display: none;
+}
+
+#api_upc_cid3160_iid907 li {
+    display: inline-block;
+    width: 50%;
+}
+
+/* Other
+  ==============================================================================*/
+
+#s-lg-tabs-container {
+    padding: 0;
+    display: none;
+}
+
+#s-lib-footer-public {
+    display: none;
+}
+
+#s-lib-scroll-top {
+    display: none !important;
+}
+
+.nopad {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .homev1 {
+        border-radius: 0 !important;
+        min-height: 400px;
+        width: 100%;
+    }
+}
+
+
+.homev1 {
+    background: rgba(230, 230, 230, 0.9);
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 1004px;
+}
+
+#s-lg-content-44697101 {
+    display: flex;
+    justify-content: center;
+}
+
+#jewl .col-sm-3.col-xs-12 a {
+    width: 100%;
+    float: left;
+}
+
+.highlightcirc {
+    background-color: #009ad6;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #1c2b59;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    box-orient: vertical;
+    box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 2rem auto;
+    transition: all 0.3s;
+}
+
+.iconhvr i, .highlightcirc i {
+    -webkit-transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+}
+
+.iconhvr i:last-child {
+    margin: auto;
+    position: absolute;
+    opacity: 0;
+}
+
+.iconhvr:hover i:first-child {
+    opacity: 0;
+}
+
+.iconhvr:hover i:last-child {
+    opacity: 1;
+}
+
+.iconhvr:hover .highlightcirc {
+    background-color: #1c2b59;
+}
+
+.iconhvr:hover .circblue {
+    color: #1c2b59;
+}
+
+.iconhvr:hover,
+.iconhvr:focus,
+.iconhvr:active {
+    text-decoration: none;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.circblue {
+    color: #009ad6;
+    font-weight: 900;
+    font-size: 20px;
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+}
+
+#api_upc_cid3160_iid907 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#s-lg-guide-header-search {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #s-lg-content-40031211 .col-sm-3 {
+        min-height: 205px;
+    }
+
+    .col-xs-6.text-center.mobileshow {
+        min-height: 205px;
+    }
+}
+
+#s-lg-guide-main {
+    padding: 0;
+}
+
+/* Version 2 libraryguides.mtsu.edu/newsite_v2
+  ==============================================================================*/
+
+.spread a {
+    margin-right: 0.5em;
+}
+
+/* Parallax on bottom of page. First ID is for version 2, 2nd is for version 1 */
+
+#s-lg-box-20036079-container {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 43, 89, .7)), to(rgba(28, 43, 89, .7))), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
+    background: linear-gradient(rgba(28, 43, 89, .7), rgba(28, 43, 89, .7)), url('https://libapps.s3.amazonaws.com/accounts/123588/images/homev3_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 475px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    box-orient: vertical;
+    box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: -1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #s-lg-box-18167310,
+    #s-lg-box-18167309 {
+        margin: 5rem 0;
+    }
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
+.mb2 {
+    margin-bottom: 2rem;
+}
+
+.justify-content-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.s-la-widget .s-la-faq-listing-meta .divider {
+    color: #000 !important;
+}
+
+#s-lg-col-1,
+#s-lg-col-2 {
+    margin: 3rem 0;
+}
+
+#s-lg-box-20036075,
+#s-la-widget-7813,
+#s-lg-box-20036074 {
+    background: transparent;
+}
+
+@media screen and (min-width: 992px) {
+    .row.s-lg-row:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(245, 245, 245);
+    }
+}
