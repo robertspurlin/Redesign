@@ -607,6 +607,19 @@ table.liaisons {
   padding: 0;
 }
 
+.icons {
+  a {
+    font-size: 100% !important;
+    padding: 0 !important;
+  }
+  i:before {
+    margin-right: 1rem;
+  }
+  i:hover {
+    color: #1b2b59;
+  }
+}
+
 .s-lib-box-title {
   color: #000 !important;
   background-color: #eee !important;
@@ -987,9 +1000,19 @@ form {
   padding-bottom: 0;
 }
 
+.footer-col:nth-of-type(2) {
+  a {
+    padding-top: 0;
+  }
+}
+
+#disclaimer div {
+  margin: 0;
+}
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .footer-col:nth-of-type(2) {
-    padding: 35px 25px;
+    padding: 25px;
   }
 
   .liblogo {
@@ -1003,7 +1026,7 @@ form {
   }
 
   .liblogo {
-    max-width: 200px !important;
+    max-width: 175px !important;
   }
 }
 
