@@ -1,18 +1,26 @@
 /*
  **
- ** library.js
- ** Authors: Amy York and Robert Spurlin
+ ** refresh-lib.js
+ ** 
  ** All the JS needed for the library website redesign.
+ ** Refresh start: 10.1.2018
+ **
+ ** Table of Contents:
+ ** - ITD Code (credit to ITD)
+ ** - Navigation button and chat button triggers
+ ** - Home Dropdowns
+ ** - Scrolling navigation 
  **
  */
 
-
-// For use of let and const on older browsers that do not support ES6
 'use strict';
 
 $(document).ready(function () {
 
-  // Alert system for MTSU.
+  /*
+   ** ITD Code. 
+   */
+
   const feed = "https://www.getrave.com/rss/mtsu/channel1";
   $.ajax(feed, {
     accepts: {
@@ -50,175 +58,95 @@ $(document).ready(function () {
     }
   });
 
-  // Button animation trigger
-  $('body').on('click', '.navbar-toggle.collapsed', function () {
-    $('.navbar-toggle').toggleClass('offnav onnav');
+  /*
+   ** End ITD Code.
+   */
+
+  // Navigation button animation trigger.
+  $('.navbar-toggle.collapsed').click(function () {
+    $(this).toggleClass('offnav onnav');
   });
 
-  // Home page slider on featured buttons function
 
+  // Chat button trigger to slide out. 
+  $('.chat').click(function () {
+    $(this).toggleClass('open');
+  });
+
+  /*
+   ** Home Dropdowns
+   */
+
+  // Selecting the dropdowns.
   const hours = document.getElementById('hours');
   const coursereserves = document.getElementById('coursereserves');
   const howdoi = document.getElementById('howdoi');
   const reserverooms = document.getElementById('reserverooms');
 
-  $('.roomtrigger').click(function (e) {
+  // Array of the dropdowns to make it easy to iterate through.
+  const dropdownArr = [hours, coursereserves, howdoi, reserverooms];
+
+  // When the button is clicked...
+  $('.iconhvr').click(function (e) {
     e.preventDefault();
 
-    if (hours && hours.style.display === 'block') {
-      $('#hours').slideUp('fast');
+    // The href attribute tells us what dropdown to show.
+    const dropdownToShow = $(this).attr('href');
 
-      setTimeout(function () {
-        $('#reserverooms').slideToggle('fast')
-      }, 300);
+    // Helper booleans.
+    let delayNeeded = false;
+    let dropdownNotShown = true;
 
-    } else if (coursereserves && coursereserves.style.display === 'block') {
-      $('#coursereserves').slideUp('fast');
-
-      setTimeout(function () {
-        $('#reserverooms').slideToggle('fast')
-      }, 300);
-
-    } else if (howdoi && howdoi.style.display === 'block') {
-      $('#howdoi').slideUp('fast');
-
-      setTimeout(function () {
-        $('#reserverooms').slideToggle('fast')
-      }, 300);
-
-    } else {
-      $('#reserverooms').slideToggle('fast');
-    }
-  });
-
-  $('.hourtrigger').click(function (e) {
-    e.preventDefault();
-
-    if (reserverooms && reserverooms.style.display === 'block') {
-      $('#reserverooms').slideUp('fast');
-
-      setTimeout(function () {
-        $('#hours').slideToggle('fast')
-      }, 300);
-
-    } else if (coursereserves && coursereserves.style.display === 'block') {
-      $('#coursereserves').slideUp('fast');
-
-      setTimeout(function () {
-        $('#hours').slideToggle('fast')
-      }, 300);
-
-    } else if (howdoi && howdoi.style.display === 'block') {
-      $('#howdoi').slideUp('fast');
-
-      setTimeout(function () {
-        $('#hours').slideToggle('fast')
-      }, 300);
-
-    } else {
-      $('#hours').slideToggle('fast');
-    }
-  });
-
-  $('.coursetrigger').click(function (e) {
-    e.preventDefault();
-
-    if (reserverooms && reserverooms.style.display === 'block') {
-      $('#reserverooms').slideUp('fast');
-
-      setTimeout(function () {
-        $('#coursereserves').slideToggle('fast')
-      }, 300);
-
-    } else if (hours && hours.style.display === 'block') {
-      $('#hours').slideUp('fast');
-
-      setTimeout(function () {
-        $('#coursereserves').slideToggle('fast')
-      }, 300);
-
-    } else if (howdoi && howdoi.style.display === 'block') {
-      $('#howdoi').slideUp('fast');
-
-      setTimeout(function () {
-        $('#coursereserves').slideToggle('fast')
-      }, 300);
-
-    } else {
-      $('#coursereserves').slideToggle('fast');
-    }
-  });
-
-  $('.howdoitrigger').click(function (e) {
-    e.preventDefault();
-
-    if (reserverooms && reserverooms.style.display === 'block') {
-      $('#reserverooms').slideUp('fast');
-
-      setTimeout(function () {
-        $('#howdoi').slideToggle('fast')
-      }, 300);
-
-    } else if (hours && hours.style.display === 'block') {
-      $('#hours').slideUp('fast');
-
-      setTimeout(function () {
-        $('#howdoi').slideToggle('fast')
-      }, 300);
-
-    } else if (coursereserves && coursereserves.style.display === 'block') {
-      $('#coursereserves').slideUp('fast');
-
-      setTimeout(function () {
-        $('#howdoi').slideToggle('fast')
-      }, 300);
-
-    } else {
-      $('#howdoi').slideToggle('fast');
-    }
-  });
-
-  $(".child").css({
-    "height": $('.parent').height()
-  });
-
-  $(window).resize(function () {
-    $(".child").css({
-      "height": $('.parent').height()
+    // If a dropdown was showing before, make sure it dissapears. 
+    dropdownArr.forEach(function (dropdown) {
+      if (dropdown.style.display == 'block') {
+        // If the dropdown is the dropdown in question, we just want it to hide.
+        if ('#' + dropdown.id == dropdownToShow) {
+          delayNeeded = !delayNeeded;
+          // This changes to false, so the dropdown won't hide and then show again on click.
+          dropdownNotShown = !dropdownNotShown;
+        } else {
+          delayNeeded = !delayNeeded;
+        }
+        $(dropdown).slideUp('fast');
+      }
     });
-  });
 
-  $('.chat').click(function () {
-    $(this).toggleClass('open');
-  });
-
-  // Scroll change. To make the logo smaller on scroll and back.
-
-  // First, need to add padding to the body so nothing is broken... 
-
-  $('body').css({
-    //'padding-top': $('header').height()
-  });
-
-  // Now let's do the shrinking. 
-  let scrolled = false;
-
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 32 && !scrolled) {
-      $('#logo-and-nav').toggleClass('fixed-menu');
-      scrolled = true;
-    }
-
-    else if (window.scrollY <= 32) {
-      if (scrolled) {
-        $('#logo-and-nav').toggleClass('fixed-menu');
-        scrolled = false;
-      } else if ($(window).width() >= 1079) {
-        const top = $('.dropdown-menu.mega-dropdown-menu').css('top');
-        $('.dropdown-menu.mega-dropdown-menu').offset({
-          top: (top - window.scrollY)
-        });
+    if (dropdownNotShown) {
+      if (delayNeeded) {
+        setTimeout(() => {
+          $(dropdownToShow).slideDown('fast');
+        }, 300);
+      } else {
+        $(dropdownToShow).slideDown('fast');
       }
     }
+
   });
+
+  /*
+   ** End Home Dropdowns 
+   */
+
+  /*
+   ** Scrolling navigation
+   */
+
+  let scrolled = false;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 32 && !scrolled) {
+      $('#logo-and-nav').toggleClass('fixed-menu');
+      scrolled = !scrolled;
+    } else if (window.scrollY <= 32 && scrolled) {
+      $('#logo-and-nav').toggleClass('fixed-menu');
+      scrolled = !scrolled;
+    }
+  });
+
+  /*
+   ** End Scrolling navigation
+   */
+
+  // End document.ready
 });
